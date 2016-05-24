@@ -1,0 +1,9 @@
+[Inputs]
+GO
+Clk
+=half_byte[3:0]=
+[Outputs]
+LCD_E
+BUSY
+=SF_D[3:0]=
+[BiDir]

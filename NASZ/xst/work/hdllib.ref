@@ -1,0 +1,12 @@
+AR lcd_init behavioral C:/Users/lab/209847/18042016PO/17042016PRZED/LCD/lcd_init.vhd sub00/vhpl01 1463133148
+AR lcd_module behavioral C:/Users/lab/209847/18042016PO/17042016PRZED/LCD/lcd_module.vhf sub00/vhpl05 1463133150
+AR lcd_config behavioral C:/Users/lab/209847/18042016PO/17042016PRZED/LCD/lcd_config.vhd sub00/vhpl09 1463133144
+EN lcd_config NULL C:/Users/lab/209847/18042016PO/17042016PRZED/LCD/lcd_config.vhd sub00/vhpl08 1463133143
+AR mul_4b_2_1 behavioral C:/Users/lab/209847/18042016PO/17042016PRZED/LCD/mul_4b_2_1.vhd sub00/vhpl11 1463133146
+AR send_4bits behavioral C:/Users/lab/209847/18042016PO/17042016PRZED/LCD/send_4bits.vhd sub00/vhpl03 1463133140
+AR send_byte behavioral C:/Users/lab/209847/18042016PO/17042016PRZED/LCD/send_byte.vhd sub00/vhpl07 1463133142
+EN mul_4b_2_1 NULL C:/Users/lab/209847/18042016PO/17042016PRZED/LCD/mul_4b_2_1.vhd sub00/vhpl10 1463133145
+EN lcd_module NULL C:/Users/lab/209847/18042016PO/17042016PRZED/LCD/lcd_module.vhf sub00/vhpl04 1463133149
+EN send_4bits NULL C:/Users/lab/209847/18042016PO/17042016PRZED/LCD/send_4bits.vhd sub00/vhpl02 1463133139
+EN send_byte NULL C:/Users/lab/209847/18042016PO/17042016PRZED/LCD/send_byte.vhd sub00/vhpl06 1463133141
+EN lcd_init NULL C:/Users/lab/209847/18042016PO/17042016PRZED/LCD/lcd_init.vhd sub00/vhpl00 1463133147

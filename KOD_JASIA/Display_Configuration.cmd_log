@@ -1,0 +1,26 @@
+vhdtdtfi -lib work Display_Configuration.vhd -prj LCD -o Display_Configuration.spl -module Display_Configuration -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Display_Configuration.spl C:/Users/lab/Documents/MB_JM/LCD/Display_Configuration.sym 
+vhdtdtfi -lib work Display_Configuration.vhd -prj LCD -o Display_Configuration.spl -module Display_Configuration -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Display_Configuration.spl C:/Users/lab/Documents/MB_JM/LCD/Display_Configuration.sym 
+vhdtdtfi -lib work Display_Configuration.vhd -prj LCD -o Display_Configuration.spl -module Display_Configuration -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Display_Configuration.spl C:/Users/lab/Documents/MB_JM/LCD/Display_Configuration.sym 
+vhdtdtfi -lib work Display_Configuration.vhd -prj LCD -o Display_Configuration.spl -module Display_Configuration -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Display_Configuration.spl C:/Users/lab/Documents/MB_JM/LCD/Display_Configuration.sym 
+vhdtdtfi -lib work Display_Configuration.vhd -prj LCD -o Display_Configuration.spl -module Display_Configuration -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Display_Configuration.spl C:/Users/lab/Documents/MB_JM/LCD/Display_Configuration.sym 
+vhdtdtfi -lib work Display_Configuration.vhd -prj LCD -o Display_Configuration.spl -module Display_Configuration -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Display_Configuration.spl C:/Users/lab/Documents/MB_JM/LCD/Display_Configuration.sym 
+vhdtdtfi -lib work Display_Configuration.vhd -prj LCD -o Display_Configuration.spl -module Display_Configuration -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Display_Configuration.spl C:/Users/lab/Documents/MB_JM/LCD/Display_Configuration.sym 
+vhdtdtfi -lib work Display_Configuration.vhd -prj LCD -o Display_Configuration.spl -module Display_Configuration -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Display_Configuration.spl C:/Users/lab/Documents/MB_JM/LCD/Display_Configuration.sym 
+vhdtdtfi -lib work Display_Configuration.vhd -prj LCD -o Display_Configuration.spl -module Display_Configuration -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Display_Configuration.spl C:/Users/lab/Documents/MB_JM/LCD/Display_Configuration.sym 
+vhdtdtfi -lib work Display_Configuration.vhd -prj LCD -o Display_Configuration.spl -module Display_Configuration -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Display_Configuration.spl C:/Users/lab/Documents/MB_JM/LCD/Display_Configuration.sym 
+vhdtdtfi -lib work Display_Configuration.vhd -prj LCD -o Display_Configuration.spl -module Display_Configuration -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Display_Configuration.spl C:/Users/lab/Documents/MB_JM/LCD/Display_Configuration.sym 
+vhdtdtfi -lib work Display_Configuration.vhd -prj LCD -o Display_Configuration.spl -module Display_Configuration -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Display_Configuration.spl C:/Users/lab/Documents/MB_JM/LCD/Display_Configuration.sym 
+vhdtdtfi -lib work Display_Configuration.vhd -prj LCD -o Display_Configuration.spl -module Display_Configuration -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Display_Configuration.spl C:/Users/lab/Documents/MB_JM/LCD/Display_Configuration.sym 

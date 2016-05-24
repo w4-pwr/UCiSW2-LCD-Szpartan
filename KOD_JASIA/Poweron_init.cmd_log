@@ -1,0 +1,12 @@
+vhdtdtfi -lib work Poweron_init.vhd -prj LCD -o Poweron_init.spl -module Poweron_init -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Poweron_init.spl C:/Users/lab/Documents/MB_JM/LCD/Poweron_init.sym 
+vhdtdtfi -lib work Poweron_init.vhd -prj LCD -o Poweron_init.spl -module Poweron_init -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Poweron_init.spl C:/Users/lab/Documents/MB_JM/LCD/Poweron_init.sym 
+vhdtdtfi -lib work Poweron_init.vhd -prj LCD -o Poweron_init.spl -module Poweron_init -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Poweron_init.spl C:/Users/lab/Documents/MB_JM/LCD/Poweron_init.sym 
+vhdtdtfi -lib work Poweron_init.vhd -prj LCD -o Poweron_init.spl -module Poweron_init -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Poweron_init.spl C:/Users/lab/Documents/MB_JM/LCD/Poweron_init.sym 
+vhdtdtfi -lib work Poweron_init.vhd -prj LCD -o Poweron_init.spl -module Poweron_init -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Poweron_init.spl C:/Users/lab/Documents/MB_JM/LCD/Poweron_init.sym 
+vhdtdtfi -lib work Poweron_init.vhd -prj LCD -o Poweron_init.spl -module Poweron_init -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Poweron_init.spl C:/Users/lab/Documents/MB_JM/LCD/Poweron_init.sym 

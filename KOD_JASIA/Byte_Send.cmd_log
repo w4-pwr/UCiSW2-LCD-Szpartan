@@ -1,0 +1,22 @@
+vhdtdtfi -lib work Byte_Send.vhd -prj LCD -o Byte_Send.spl -module Byte_Send -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Byte_Send.spl C:/Users/lab/Documents/MB_JM/LCD/Byte_Send.sym 
+vhdtdtfi -lib work Byte_Send.vhd -prj LCD -o Byte_Send.spl -module Byte_Send -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Byte_Send.spl C:/Users/lab/Documents/MB_JM/LCD/Byte_Send.sym 
+vhdtdtfi -lib work Byte_Send.vhd -prj LCD -o Byte_Send.spl -module Byte_Send -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Byte_Send.spl C:/Users/lab/Documents/MB_JM/LCD/Byte_Send.sym 
+vhdtdtfi -lib work Byte_Send.vhd -prj LCD -o Byte_Send.spl -module Byte_Send -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Byte_Send.spl C:/Users/lab/Documents/MB_JM/LCD/Byte_Send.sym 
+vhdtdtfi -lib work Byte_Send.vhd -prj LCD -o Byte_Send.spl -module Byte_Send -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Byte_Send.spl C:/Users/lab/Documents/MB_JM/LCD/Byte_Send.sym 
+vhdtdtfi -lib work Byte_Send.vhd -prj LCD -o Byte_Send.spl -module Byte_Send -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Byte_Send.spl C:/Users/lab/Documents/MB_JM/LCD/Byte_Send.sym 
+vhdtdtfi -lib work Byte_Send.vhd -prj LCD -o Byte_Send.spl -module Byte_Send -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Byte_Send.spl C:/Users/lab/Documents/MB_JM/LCD/Byte_Send.sym 
+vhdtdtfi -lib work Byte_Send.vhd -prj LCD -o Byte_Send.spl -module Byte_Send -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Byte_Send.spl C:/Users/lab/Documents/MB_JM/LCD/Byte_Send.sym 
+vhdtdtfi -lib work Byte_Send.vhd -prj LCD -o Byte_Send.spl -module Byte_Send -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Byte_Send.spl C:/Users/lab/Documents/MB_JM/LCD/Byte_Send.sym 
+vhdtdtfi -lib work Byte_Send.vhd -prj LCD -o Byte_Send.spl -module Byte_Send -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Byte_Send.spl C:/Users/lab/Documents/MB_JM/LCD/Byte_Send.sym 
+vhdtdtfi -lib work Byte_Send.vhd -prj LCD -o Byte_Send.spl -module Byte_Send -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Byte_Send.spl C:/Users/lab/Documents/MB_JM/LCD/Byte_Send.sym 

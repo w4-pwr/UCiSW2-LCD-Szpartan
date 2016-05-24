@@ -1,0 +1,707 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: projekt.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "projekt.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "projekt"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : projekt
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/lab/Documents/MB_JM/LCD/Nibble_Send.vhd" in Library work.
+Architecture behavioral of Entity nibble_send is up to date.
+Compiling vhdl file "C:/Users/lab/Documents/MB_JM/LCD/Byte_Send.vhd" in Library work.
+Architecture behavioral of Entity byte_send is up to date.
+Compiling vhdl file "C:/Users/lab/Documents/MB_JM/LCD/Poweron_init.vhd" in Library work.
+Architecture behavioral of Entity poweron_init is up to date.
+Compiling vhdl file "C:/Users/lab/Documents/MB_JM/LCD/Display_Configuration.vhd" in Library work.
+Entity <display_configuration> compiled.
+Entity <display_configuration> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.vhd" in Library work.
+Entity <lcd_write> compiled.
+Entity <lcd_write> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/lab/Documents/MB_JM/LCD/MuXXX4.vhd" in Library work.
+Architecture behavioral of Entity muxxx4 is up to date.
+Compiling vhdl file "C:/Users/lab/Documents/MB_JM/LCD/MuXXX8.vhd" in Library work.
+Architecture behavioral of Entity muxxx8 is up to date.
+Compiling vhdl file "C:/Users/lab/Documents/MB_JM/LCD/projekt.vhf" in Library work.
+Entity <test_lcd_muser_projekt> compiled.
+Entity <test_lcd_muser_projekt> (Architecture <behavioral>) compiled.
+Entity <projekt> compiled.
+Entity <projekt> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/lab/Documents/MB_JM/LCD/test_LCD.vhf" in Library work.
+Entity <test_lcd> compiled.
+Entity <test_lcd> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <projekt> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <test_LCD_MUSER_projekt> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Nibble_Send> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Byte_Send> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Poweron_init> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Display_Configuration> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <LCD_Write> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MuXXX4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MuXXX8> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <projekt> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/lab/Documents/MB_JM/LCD/projekt.vhf" line 259: Unconnected output port 'Busy' of component 'test_LCD_MUSER_projekt'.
+Entity <projekt> analyzed. Unit <projekt> generated.
+
+Analyzing Entity <test_LCD_MUSER_projekt> in library <work> (Architecture <behavioral>).
+Entity <test_LCD_MUSER_projekt> analyzed. Unit <test_LCD_MUSER_projekt> generated.
+
+Analyzing Entity <Nibble_Send> in library <work> (Architecture <behavioral>).
+Entity <Nibble_Send> analyzed. Unit <Nibble_Send> generated.
+
+Analyzing Entity <Byte_Send> in library <work> (Architecture <behavioral>).
+Entity <Byte_Send> analyzed. Unit <Byte_Send> generated.
+
+Analyzing Entity <Poweron_init> in library <work> (Architecture <behavioral>).
+Entity <Poweron_init> analyzed. Unit <Poweron_init> generated.
+
+Analyzing Entity <Display_Configuration> in library <work> (Architecture <behavioral>).
+Entity <Display_Configuration> analyzed. Unit <Display_Configuration> generated.
+
+Analyzing Entity <LCD_Write> in library <work> (Architecture <behavioral>).
+INFO:Xst:2679 - Register <LCD_RW> in unit <LCD_Write> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <SF_CE> in unit <LCD_Write> has a constant value of 1 during circuit operation. The register is replaced by logic.
+Entity <LCD_Write> analyzed. Unit <LCD_Write> generated.
+
+Analyzing Entity <MuXXX4> in library <work> (Architecture <behavioral>).
+Entity <MuXXX4> analyzed. Unit <MuXXX4> generated.
+
+Analyzing Entity <MuXXX8> in library <work> (Architecture <behavioral>).
+Entity <MuXXX8> analyzed. Unit <MuXXX8> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Nibble_Send>.
+    Related source file is "C:/Users/lab/Documents/MB_JM/LCD/Nibble_Send.vhd".
+    Found finite state machine <FSM_0> for signal <state_of_transmission>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 5                                              |
+    | Clock              | Clk_50MHz                 (rising_edge)        |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <LCD_E>.
+    Found 4-bit register for signal <SF_D>.
+    Found 1-bit register for signal <Ready>.
+    Found 4-bit register for signal <data>.
+    Found 4-bit register for signal <i>.
+    Found 4-bit adder for signal <i$share0000> created at line 51.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  14 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <Nibble_Send> synthesized.
+
+
+Synthesizing Unit <Byte_Send>.
+    Related source file is "C:/Users/lab/Documents/MB_JM/LCD/Byte_Send.vhd".
+    Found finite state machine <FSM_1> for signal <state_of_transmission>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 7                                              |
+    | Clock              | Clk_50MHz                 (rising_edge)        |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <Send_Out>.
+    Found 1-bit register for signal <Ready>.
+    Found 4-bit register for signal <Nibble>.
+    Found 8-bit register for signal <data>.
+    Found 11-bit register for signal <i>.
+    Found 11-bit adder for signal <i$share0000> created at line 55.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  25 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <Byte_Send> synthesized.
+
+
+Synthesizing Unit <Poweron_init>.
+    Related source file is "C:/Users/lab/Documents/MB_JM/LCD/Poweron_init.vhd".
+    Found finite state machine <FSM_2> for signal <state_of_init>.
+    -----------------------------------------------------------------------
+    | States             | 11                                             |
+    | Transitions        | 21                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 11                                             |
+    | Clock              | Clk_50Mhz                 (rising_edge)        |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <Send>.
+    Found 1-bit register for signal <Done>.
+    Found 4-bit register for signal <Nibble>.
+    Found 20-bit register for signal <i>.
+    Found 20-bit adder for signal <i$share0000> created at line 57.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <Poweron_init> synthesized.
+
+
+Synthesizing Unit <Display_Configuration>.
+    Related source file is "C:/Users/lab/Documents/MB_JM/LCD/Display_Configuration.vhd".
+    Found finite state machine <FSM_3> for signal <state_of_configuration>.
+    -----------------------------------------------------------------------
+    | States             | 12                                             |
+    | Transitions        | 20                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 12                                             |
+    | Clock              | Clk_50Mhz                 (rising_edge)        |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <Send>.
+    Found 1-bit register for signal <Done>.
+    Found 8-bit register for signal <Byte>.
+    Found 17-bit up counter for signal <i>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  10 D-type flip-flop(s).
+Unit <Display_Configuration> synthesized.
+
+
+Synthesizing Unit <LCD_Write>.
+    Related source file is "C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.vhd".
+    Found finite state machine <FSM_4> for signal <state_of_LCD>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 9                                              |
+    | Clock              | Clk_50Mhz                 (rising_edge)        |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <Send>.
+    Found 1-bit register for signal <init_poweron>.
+    Found 1-bit register for signal <init_function>.
+    Found 1-bit register for signal <Busy>.
+    Found 1-bit register for signal <LCD_RS>.
+    Found 8-bit register for signal <Byte_Out>.
+    Found 8-bit register for signal <data>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  21 D-type flip-flop(s).
+Unit <LCD_Write> synthesized.
+
+
+Synthesizing Unit <MuXXX4>.
+    Related source file is "C:/Users/lab/Documents/MB_JM/LCD/MuXXX4.vhd".
+Unit <MuXXX4> synthesized.
+
+
+Synthesizing Unit <MuXXX8>.
+    Related source file is "C:/Users/lab/Documents/MB_JM/LCD/MuXXX8.vhd".
+Unit <MuXXX8> synthesized.
+
+
+Synthesizing Unit <test_LCD_MUSER_projekt>.
+    Related source file is "C:/Users/lab/Documents/MB_JM/LCD/projekt.vhf".
+Unit <test_LCD_MUSER_projekt> synthesized.
+
+
+Synthesizing Unit <projekt>.
+    Related source file is "C:/Users/lab/Documents/MB_JM/LCD/projekt.vhf".
+WARNING:Xst:653 - Signal <XLXN_1> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <projekt> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 11-bit adder                                          : 1
+ 20-bit adder                                          : 1
+ 4-bit adder                                           : 1
+# Counters                                             : 1
+ 17-bit up counter                                     : 1
+# Registers                                            : 24
+ 1-bit register                                        : 13
+ 11-bit register                                       : 1
+ 20-bit register                                       : 1
+ 4-bit register                                        : 5
+ 8-bit register                                        : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_4> for best encoding.
+Optimizing FSM <XLXI_1/XLXI_14/state_of_LCD/FSM> on signal <state_of_LCD[1:7]> with one-hot encoding.
+-------------------------------
+ State             | Encoding
+-------------------------------
+ idle              | 0000001
+ power_on_init     | 0000010
+ function_set_init | 0000100
+ finish_init       | 0001000
+ ready_for_data    | 0010000
+ transmit_data     | 0100000
+ finish_transmit   | 1000000
+-------------------------------
+Analyzing FSM <FSM_3> for best encoding.
+Optimizing FSM <XLXI_1/XLXI_10/state_of_configuration/FSM> on signal <state_of_configuration[1:12]> with one-hot encoding.
+-----------------------------
+ State       | Encoding
+-----------------------------
+ idle        | 000000000001
+ func_set    | 000000000010
+ entry_mode  | 000000001000
+ disp_onoff  | 000000100000
+ clear_disp  | 000010000000
+ finish      | 100000000000
+ wait82      | 000100000000
+ set_blink   | 001000000000
+ func_set1   | 000000000100
+ entry_mode1 | 000000010000
+ disp_onoff1 | 000001000000
+ set_blink1  | 010000000000
+-----------------------------
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <XLXI_1/XLXI_7/state_of_init/FSM> on signal <state_of_init[1:11]> with one-hot encoding.
+-----------------------
+ State  | Encoding
+-----------------------
+ idle   | 00000000001
+ q1     | 00000000010
+ q2     | 00000000100
+ q3     | 00000001000
+ q4     | 00000010000
+ q5     | 00000100000
+ q6     | 00001000000
+ q7     | 00010000000
+ q8     | 00100000000
+ q9     | 01000000000
+ finish | 10000000000
+-----------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <XLXI_1/XLXI_3/state_of_transmission/FSM> on signal <state_of_transmission[1:6]> with one-hot encoding.
+------------------------------
+ State            | Encoding
+------------------------------
+ idle             | 000001
+ send_high_nibble | 000010
+ wait_1           | 000100
+ send_low_nibble  | 001000
+ wait_40          | 010000
+ finish           | 100000
+------------------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <XLXI_1/XLXI_2/state_of_transmission/FSM> on signal <state_of_transmission[1:2]> with gray encoding.
+--------------------
+ State  | Encoding
+--------------------
+ idle   | 00
+ wait40 | 01
+ enable | 11
+ finish | 10
+--------------------
+WARNING:Xst:1426 - The value init of the FF/Latch FFd7 hinder the constant cleaning in the block FSM.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1710 - FF/Latch <data_7> (without init value) has a constant value of 0 in block <XLXI_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_6> (without init value) has a constant value of 1 in block <XLXI_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_5> (without init value) has a constant value of 0 in block <XLXI_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_4> (without init value) has a constant value of 0 in block <XLXI_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_3> (without init value) has a constant value of 0 in block <XLXI_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_2> (without init value) has a constant value of 0 in block <XLXI_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_1> (without init value) has a constant value of 1 in block <XLXI_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_0> (without init value) has a constant value of 0 in block <XLXI_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Send> (without init value) has a constant value of 0 in block <XLXI_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd2> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd1> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Byte_7> (without init value) has a constant value of 0 in block <XLXI_10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Byte_6> (without init value) has a constant value of 0 in block <XLXI_10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Byte_4> (without init value) has a constant value of 0 in block <XLXI_10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_7> (without init value) has a constant value of 0 in block <XLXI_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_4> (without init value) has a constant value of 0 in block <XLXI_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Byte_Out_0> (without init value) has a constant value of 0 in block <XLXI_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Byte_Out_1> (without init value) has a constant value of 1 in block <XLXI_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Byte_Out_2> (without init value) has a constant value of 0 in block <XLXI_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Byte_Out_3> (without init value) has a constant value of 0 in block <XLXI_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Byte_Out_4> (without init value) has a constant value of 0 in block <XLXI_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Byte_Out_5> (without init value) has a constant value of 0 in block <XLXI_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Byte_Out_6> (without init value) has a constant value of 1 in block <XLXI_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Byte_Out_7> (without init value) has a constant value of 0 in block <XLXI_14>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 5
+# Adders/Subtractors                                   : 3
+ 11-bit adder                                          : 1
+ 20-bit adder                                          : 1
+ 4-bit adder                                           : 1
+# Counters                                             : 1
+ 17-bit up counter                                     : 1
+# Registers                                            : 96
+ Flip-Flops                                            : 96
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch FSM_FFd7 hinder the constant cleaning in the block FSM_4-parent.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1710 - FF/Latch <Byte_4> (without init value) has a constant value of 0 in block <Display_Configuration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Byte_6> (without init value) has a constant value of 0 in block <Display_Configuration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Byte_7> (without init value) has a constant value of 0 in block <Display_Configuration>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <projekt> ...
+
+Optimizing unit <Nibble_Send> ...
+
+Optimizing unit <Byte_Send> ...
+
+Optimizing unit <Poweron_init> ...
+WARNING:Xst:1710 - FF/Latch <Nibble_2> (without init value) has a constant value of 0 in block <Poweron_init>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Nibble_3> (without init value) has a constant value of 0 in block <Poweron_init>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Display_Configuration> ...
+
+Optimizing unit <LCD_Write> ...
+
+Optimizing unit <test_LCD_MUSER_projekt> ...
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_3/data_7> (without init value) has a constant value of 0 in block <projekt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/XLXI_3/data_4> (without init value) has a constant value of 0 in block <projekt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/XLXI_14/state_of_LCD_FSM_FFd2> has a constant value of 0 in block <projekt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/XLXI_14/state_of_LCD_FSM_FFd1> has a constant value of 0 in block <projekt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/XLXI_14/data_7> (without init value) has a constant value of 0 in block <projekt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/XLXI_14/data_6> (without init value) has a constant value of 1 in block <projekt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/XLXI_14/data_5> (without init value) has a constant value of 0 in block <projekt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/XLXI_14/data_4> (without init value) has a constant value of 0 in block <projekt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/XLXI_14/data_3> (without init value) has a constant value of 0 in block <projekt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/XLXI_14/data_2> (without init value) has a constant value of 0 in block <projekt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/XLXI_14/data_1> (without init value) has a constant value of 1 in block <projekt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/XLXI_14/data_0> (without init value) has a constant value of 0 in block <projekt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/XLXI_14/Send> (without init value) has a constant value of 0 in block <projekt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/XLXI_14/Byte_Out_0> (without init value) has a constant value of 0 in block <projekt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/XLXI_14/Byte_Out_1> (without init value) has a constant value of 1 in block <projekt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/XLXI_14/Byte_Out_2> (without init value) has a constant value of 0 in block <projekt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/XLXI_14/Byte_Out_3> (without init value) has a constant value of 0 in block <projekt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/XLXI_14/Byte_Out_4> (without init value) has a constant value of 0 in block <projekt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/XLXI_14/Byte_Out_5> (without init value) has a constant value of 0 in block <projekt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/XLXI_14/Byte_Out_6> (without init value) has a constant value of 1 in block <projekt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_1/XLXI_14/Byte_Out_7> (without init value) has a constant value of 0 in block <projekt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <XLXI_1/XLXI_14/Busy> of sequential type is unconnected in block <projekt>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block projekt, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 124
+ Flip-Flops                                            : 124
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : projekt.ngr
+Top Level Output File Name         : projekt
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 9
+
+Cell Usage :
+# BELS                             : 339
+#      GND                         : 1
+#      INV                         : 7
+#      LUT1                        : 46
+#      LUT2                        : 26
+#      LUT2_L                      : 1
+#      LUT3                        : 25
+#      LUT3_D                      : 4
+#      LUT4                        : 109
+#      LUT4_D                      : 11
+#      LUT4_L                      : 2
+#      MUXCY                       : 50
+#      MUXF5                       : 6
+#      OR2                         : 2
+#      VCC                         : 1
+#      XORCY                       : 48
+# FlipFlops/Latches                : 124
+#      FD                          : 75
+#      FDE                         : 12
+#      FDR                         : 2
+#      FDRE                        : 17
+#      FDS                         : 14
+#      FDSE                        : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 8
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      123  out of   4656     2%  
+ Number of Slice Flip Flops:            124  out of   9312     1%  
+ Number of 4 input LUTs:                231  out of   9312     2%  
+ Number of IOs:                           9
+ Number of bonded IOBs:                   9  out of    232     3%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk50MHz                           | BUFGP                  | 124   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 8.254ns (Maximum Frequency: 121.153MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.310ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk50MHz'
+  Clock period: 8.254ns (frequency: 121.153MHz)
+  Total number of paths / destination ports: 3645 / 189
+-------------------------------------------------------------------------
+Delay:               8.254ns (Levels of Logic = 6)
+  Source:            XLXI_1/XLXI_7/i_13 (FF)
+  Destination:       XLXI_1/XLXI_7/i_0 (FF)
+  Source Clock:      Clk50MHz rising
+  Destination Clock: Clk50MHz rising
+
+  Data Path: XLXI_1/XLXI_7/i_13 to XLXI_1/XLXI_7/i_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.591   0.762  XLXI_1/XLXI_7/i_13 (XLXI_1/XLXI_7/i_13)
+     LUT3:I0->O            1   0.704   0.455  XLXI_1/XLXI_7/state_of_init_cmp_eq00002_SW0 (N48)
+     LUT4_D:I2->LO         1   0.704   0.104  XLXI_1/XLXI_7/state_of_init_cmp_eq00002 (N98)
+     LUT4:I3->O            3   0.704   0.535  XLXI_1/XLXI_7/state_of_init_cmp_eq0001 (XLXI_1/XLXI_7/state_of_init_cmp_eq0001)
+     LUT4:I3->O            2   0.704   0.451  XLXI_1/XLXI_7/i_mux0000<0>123_SW0 (N70)
+     LUT4_D:I3->O          9   0.704   0.824  XLXI_1/XLXI_7/i_mux0000<0>125 (XLXI_1/XLXI_7/N0)
+     LUT4:I3->O            1   0.704   0.000  XLXI_1/XLXI_7/i_mux0000<17>1 (XLXI_1/XLXI_7/i_mux0000<17>)
+     FD:D                      0.308          XLXI_1/XLXI_7/i_17
+    ----------------------------------------
+    Total                      8.254ns (5.123ns logic, 3.131ns route)
+                                       (62.1% logic, 37.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk50MHz'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            XLXI_1/XLXI_14/LCD_RS (FF)
+  Destination:       LCD_RS (PAD)
+  Source Clock:      Clk50MHz rising
+
+  Data Path: XLXI_1/XLXI_14/LCD_RS to LCD_RS
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              2   0.591   0.447  XLXI_1/XLXI_14/LCD_RS (XLXI_1/XLXI_14/LCD_RS)
+     OBUF:I->O                 3.272          LCD_RS_OBUF (LCD_RS)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.69 secs
+ 
+--> 
+
+Total memory usage is 218760 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   55 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

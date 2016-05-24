@@ -1,0 +1,2 @@
+vhdl work "LCD_Write.vhd"
+vhdl work "Test_LCD_Write2.vhd"

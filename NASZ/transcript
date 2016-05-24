@@ -1,0 +1,95 @@
+# Reading C:/modeltech_10.1c/tcl/vsim/pref.tcl 
+# //  ModelSim SE 10.1c Jul 27 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {lcd_module_lcd_module_sch_tb.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity send_byte
+# -- Compiling architecture Behavioral of send_byte
+# Model Technology ModelSim SE vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity send_4bits
+# -- Compiling architecture Behavioral of send_4bits
+# Model Technology ModelSim SE vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mul_4b_2_1
+# -- Compiling architecture Behavioral of mul_4b_2_1
+# Model Technology ModelSim SE vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lcd_init
+# -- Compiling architecture Behavioral of lcd_init
+# Model Technology ModelSim SE vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lcd_config
+# -- Compiling architecture Behavioral of lcd_config
+# Model Technology ModelSim SE vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package VCOMPONENTS
+# -- Compiling entity lcd_module
+# -- Compiling architecture BEHAVIORAL of lcd_module
+# Model Technology ModelSim SE vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package VCOMPONENTS
+# -- Compiling entity lcd_module_lcd_module_sch_tb
+# -- Compiling architecture behavioral of lcd_module_lcd_module_sch_tb
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.lcd_module_lcd_module_sch_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "send_4bits(Behavioral)".
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading unisim.vcomponents
+# Loading work.lcd_module_lcd_module_sch_tb(behavioral)#1
+# Loading work.lcd_module(behavioral)#1
+# Loading work.send_4bits(behavioral)#1
+# Loading unisim.inv(inv_v)#1
+# Loading work.send_byte(behavioral)#1
+# Loading work.lcd_config(behavioral)#1
+# Loading work.mul_4b_2_1(behavioral)#1
+# Loading unisim.or2(or2_v)#1
+# Loading work.lcd_init(behavioral)#1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: lab  Hostname: LAB016-02  ProcessID: 2876
+# 
+#           Attempting to use alternate WLF file "./wlftybeevk".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftybeevk
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+restart
+run
+# Causality operation skipped due to absense of debug database file
+add wave -position end  sim:/lcd_module_lcd_module_sch_tb/UUT/XLXI_22/state_of_init
+run

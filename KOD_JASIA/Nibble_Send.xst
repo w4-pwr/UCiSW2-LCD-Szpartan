@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/lab/Documents/MB_JM/LCD/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/lab/Documents/MB_JM/LCD/xst"
+elaborate
+-ifn Nibble_Send.prj
+-ifmt mixed

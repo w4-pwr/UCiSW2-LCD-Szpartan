@@ -1,0 +1,7 @@
+[Inputs]
+set
+=line_0[3:0]=
+=line_1[3:0]=
+[Outputs]
+=line_out[3:0]=
+[BiDir]

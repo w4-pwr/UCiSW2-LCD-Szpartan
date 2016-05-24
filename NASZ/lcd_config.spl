@@ -1,0 +1,11 @@
+[Inputs]
+start
+byte_sent
+Clk_50MHz
+[Outputs]
+busy
+send
+LCD_RW
+LCD_RS
+=byte_out[7:0]=
+[BiDir]

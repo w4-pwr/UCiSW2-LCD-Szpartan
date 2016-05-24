@@ -1,0 +1,2 @@
+vhdl isim_temp "Byte_Send.vhd"
+vhdl isim_temp "test_byte_send.vhd"

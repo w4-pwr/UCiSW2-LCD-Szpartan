@@ -1,0 +1,53 @@
+xst -intstyle ise -ifn "C:/xlinxprj/LCD/lcd_init.xst" -ofn "C:/xlinxprj/LCD/lcd_init.syr" 
+xst -intstyle ise -ifn "C:/XilinxPrj/4042016/LCD/lcd_init.xst" -ofn "C:/XilinxPrj/4042016/LCD/lcd_init.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCD.ucf -p xc3s100e-vq100-4 lcd_init.ngc lcd_init.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCD.ucf -p xc3s100e-vq100-4 lcd_init.ngc lcd_init.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-vq100-4 lcd_init.ngc lcd_init.ngd  
+map -intstyle ise -p xc3s100e-vq100-4 -cm area -ir off -pr off -c 100 -o lcd_init_map.ncd lcd_init.ngd lcd_init.pcf 
+par -w -intstyle ise -ol high -t 1 lcd_init_map.ncd lcd_init.ncd lcd_init.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lcd_init.twx lcd_init.ncd -o lcd_init.twr lcd_init.pcf 
+vhdtdtfi -lib work lcd_init.vhd -prj LCD -o lcd_init.spl -module lcd_init -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e lcd_init.spl C:/XilinxPrj/4042016/LCD/lcd_init.sym 
+xst -intstyle ise -ifn "C:/XilinxPrj/4042016/LCD/lcd_init.xst" -ofn "C:/XilinxPrj/4042016/LCD/lcd_init.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-vq100-4 lcd_init.ngc lcd_init.ngd  
+map -intstyle ise -p xc3s100e-vq100-4 -cm area -ir off -pr off -c 100 -o lcd_init_map.ncd lcd_init.ngd lcd_init.pcf 
+par -w -intstyle ise -ol high -t 1 lcd_init_map.ncd lcd_init.ncd lcd_init.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lcd_init.twx lcd_init.ncd -o lcd_init.twr lcd_init.pcf 
+xst -intstyle ise -ifn "C:/XilinxPrj/4042016/LCD/lcd_init.xst" -ofn "C:/XilinxPrj/4042016/LCD/lcd_init.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-vq100-4 lcd_init.ngc lcd_init.ngd  
+map -intstyle ise -p xc3s100e-vq100-4 -cm area -ir off -pr off -c 100 -o lcd_init_map.ncd lcd_init.ngd lcd_init.pcf 
+par -w -intstyle ise -ol high -t 1 lcd_init_map.ncd lcd_init.ncd lcd_init.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lcd_init.twx lcd_init.ncd -o lcd_init.twr lcd_init.pcf 
+xst -intstyle ise -ifn "C:/XilinxPrj/4042016/LCD/lcd_init.xst" -ofn "C:/XilinxPrj/4042016/LCD/lcd_init.syr" 
+xst -intstyle ise -ifn "C:/XilinxPrj/4042016/LCD/lcd_init.xst" -ofn "C:/XilinxPrj/4042016/LCD/lcd_init.syr" 
+vhdtdtfi -lib work lcd_init.vhd -prj LCD -o lcd_init.spl -module lcd_init -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e lcd_init.spl C:/XilinxPrj/4042016/LCD/lcd_init.sym 
+vhdtdtfi -lib work lcd_init.vhd -prj LCD -o lcd_init.spl -module lcd_init -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e lcd_init.spl C:/XilinxPrj/4042016/LCD/lcd_init.sym 
+vhdtdtfi -lib work lcd_init.vhd -prj LCD -o lcd_init.spl -module lcd_init -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e lcd_init.spl C:/XilinxPrj/4042016/LCD/lcd_init.sym 
+vhdtdtfi -lib work lcd_init.vhd -prj LCD -o lcd_init.spl -module lcd_init -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e lcd_init.spl C:/XilinxPrj/4042016/LCD/lcd_init.sym 
+vhdtdtfi -lib work lcd_init.vhd -prj LCD -o lcd_init.spl -module lcd_init -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e lcd_init.spl C:/XilinxPrj/4042016/LCD/lcd_init.sym 
+vhdtdtfi -lib work lcd_init.vhd -prj LCD -o lcd_init.spl -module lcd_init -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e lcd_init.spl C:/XilinxPrj/4042016/LCD/lcd_init.sym 
+vhdtdtfi -lib work lcd_init.vhd -prj LCD -o lcd_init.spl -module lcd_init -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e lcd_init.spl C:/XilinxPrj/4042016/LCD/lcd_init.sym 
+vhdtdtfi -lib work lcd_init.vhd -prj LCD -o lcd_init.spl -module lcd_init -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e lcd_init.spl C:/XilinxPrj/4042016/LCD/lcd_init.sym 
+vhdtdtfi -lib work lcd_init.vhd -prj LCD -o lcd_init.spl -module lcd_init -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e lcd_init.spl C:/Users/lab/Desktop/17042016PRZED/LCD/lcd_init.sym 
+vhdtdtfi -lib work lcd_init.vhd -prj LCD -o lcd_init.spl -module lcd_init -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e lcd_init.spl C:/Users/lab/Desktop/17042016PRZED/LCD/lcd_init.sym 
+vhdtdtfi -lib work lcd_init.vhd -prj LCD -o lcd_init.spl -module lcd_init -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e lcd_init.spl C:/Users/lab/Desktop/17042016PRZED/LCD/lcd_init.sym 
+vhdtdtfi -prj LCD -o C:/Users/lab/Desktop/17042016PRZED/LCD/lcd_init.vhi -module lcd_init -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work lcd_init.vhd 
+vhdtdtfi -lib work lcd_init.vhd -prj LCD -o lcd_init.spl -module lcd_init -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e lcd_init.spl C:/Users/lab/Desktop/17042016PRZED/LCD/lcd_init.sym 
+vhdtdtfi -lib work lcd_init.vhd -prj LCD -o lcd_init.spl -module lcd_init -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e lcd_init.spl C:/Users/lab/Desktop/17042016PRZED/LCD/lcd_init.sym 
+vhdtdtfi -lib work lcd_init.vhd -prj LCD -o lcd_init.spl -module lcd_init -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e lcd_init.spl C:/Users/lab/Desktop/17042016PRZED/LCD/lcd_init.sym 
+vhdtdtfi -lib work lcd_init.vhd -prj LCD -o lcd_init.spl -module lcd_init -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e lcd_init.spl C:/Users/lab/209847/18042016PO/17042016PRZED/LCD/lcd_init.sym 

@@ -1,0 +1,2 @@
+vhdl work "lcd_init.vhd"
+vhdl work "lcd_init_schematic.vhf"

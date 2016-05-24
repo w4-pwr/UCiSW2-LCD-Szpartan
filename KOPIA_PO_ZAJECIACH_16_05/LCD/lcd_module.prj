@@ -1,0 +1,6 @@
+vhdl work "send_byte.vhd"
+vhdl work "send_4bits.vhd"
+vhdl work "mul_4b_2_1.vhd"
+vhdl work "lcd_init.vhd"
+vhdl work "lcd_config.vhd"
+vhdl work "lcd_module.vhf"

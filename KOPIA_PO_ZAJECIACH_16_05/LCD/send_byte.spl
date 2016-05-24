@@ -1,0 +1,10 @@
+[Inputs]
+Clk_50MHz
+ready_to_send_half_byte
+send_in
+=Byte_in[7:0]=
+[Outputs]
+send_out
+busy
+=half_byte[3:0]=
+[BiDir]

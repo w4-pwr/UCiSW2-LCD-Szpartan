@@ -1,0 +1,17 @@
+[Inputs]
+Clk_50Mhz
+Send_Ready
+done_poweron
+done_function
+WE
+=Byte_In[7:0]=
+[Outputs]
+Send
+LCD_RS
+LCD_RW
+SF_CE
+init_poweron
+init_function
+Busy
+=Byte_Out[7:0]=
+[BiDir]

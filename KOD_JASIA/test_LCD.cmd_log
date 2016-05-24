@@ -1,0 +1,79 @@
+xst -intstyle ise -ifn "C:/Users/lab/Documents/MB_JM/LCD/test_LCD.xst" -ofn "C:/Users/lab/Documents/MB_JM/LCD/test_LCD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCD.ucf -uc GenIO.ucf -p xc3s1600e-fg320-5 test_LCD.ngc test_LCD.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o test_LCD_map.ncd test_LCD.ngd test_LCD.pcf 
+par -w -intstyle ise -ol high -t 1 test_LCD_map.ncd test_LCD.ncd test_LCD.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml test_LCD.twx test_LCD.ncd -o test_LCD.twr test_LCD.pcf -ucf LCD.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f test_LCD.ut test_LCD.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Documents/MB_JM/LCD/test_LCD.xst" -ofn "C:/Users/lab/Documents/MB_JM/LCD/test_LCD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCD.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 test_LCD.ngc test_LCD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o test_LCD_map.ncd test_LCD.ngd test_LCD.pcf 
+par -w -intstyle ise -ol high -t 1 test_LCD_map.ncd test_LCD.ncd test_LCD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml test_LCD.twx test_LCD.ncd -o test_LCD.twr test_LCD.pcf -ucf LCD.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f test_LCD.ut test_LCD.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Documents/MB_JM/LCD/test_LCD.xst" -ofn "C:/Users/lab/Documents/MB_JM/LCD/test_LCD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCD.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 test_LCD.ngc test_LCD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o test_LCD_map.ncd test_LCD.ngd test_LCD.pcf 
+par -w -intstyle ise -ol high -t 1 test_LCD_map.ncd test_LCD.ncd test_LCD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml test_LCD.twx test_LCD.ncd -o test_LCD.twr test_LCD.pcf -ucf LCD.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f test_LCD.ut test_LCD.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Documents/MB_JM/LCD/test_LCD.xst" -ofn "C:/Users/lab/Documents/MB_JM/LCD/test_LCD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCD.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 test_LCD.ngc test_LCD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o test_LCD_map.ncd test_LCD.ngd test_LCD.pcf 
+par -w -intstyle ise -ol high -t 1 test_LCD_map.ncd test_LCD.ncd test_LCD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml test_LCD.twx test_LCD.ncd -o test_LCD.twr test_LCD.pcf -ucf LCD.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f test_LCD.ut test_LCD.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Documents/MB_JM/LCD/test_LCD.xst" -ofn "C:/Users/lab/Documents/MB_JM/LCD/test_LCD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCD.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 test_LCD.ngc test_LCD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o test_LCD_map.ncd test_LCD.ngd test_LCD.pcf 
+par -w -intstyle ise -ol high -t 1 test_LCD_map.ncd test_LCD.ncd test_LCD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml test_LCD.twx test_LCD.ncd -o test_LCD.twr test_LCD.pcf -ucf LCD.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f test_LCD.ut test_LCD.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Documents/MB_JM/LCD/test_LCD.xst" -ofn "C:/Users/lab/Documents/MB_JM/LCD/test_LCD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCD.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 test_LCD.ngc test_LCD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o test_LCD_map.ncd test_LCD.ngd test_LCD.pcf 
+par -w -intstyle ise -ol high -t 1 test_LCD_map.ncd test_LCD.ncd test_LCD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml test_LCD.twx test_LCD.ncd -o test_LCD.twr test_LCD.pcf -ucf LCD.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f test_LCD.ut test_LCD.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Documents/MB_JM/LCD/test_LCD.xst" -ofn "C:/Users/lab/Documents/MB_JM/LCD/test_LCD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -uc LCD.ucf -p xc3s500e-fg320-4 test_LCD.ngc test_LCD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o test_LCD_map.ncd test_LCD.ngd test_LCD.pcf 
+par -w -intstyle ise -ol high -t 1 test_LCD_map.ncd test_LCD.ncd test_LCD.pcf 
+bitgen -intstyle ise -f test_LCD.ut test_LCD.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Documents/MB_JM/LCD/test_LCD.xst" -ofn "C:/Users/lab/Documents/MB_JM/LCD/test_LCD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCD.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 test_LCD.ngc test_LCD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o test_LCD_map.ncd test_LCD.ngd test_LCD.pcf 
+par -w -intstyle ise -ol high -t 1 test_LCD_map.ncd test_LCD.ncd test_LCD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml test_LCD.twx test_LCD.ncd -o test_LCD.twr test_LCD.pcf -ucf LCD.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f test_LCD.ut test_LCD.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Documents/MB_JM/LCD/test_LCD.xst" -ofn "C:/Users/lab/Documents/MB_JM/LCD/test_LCD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCD.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 test_LCD.ngc test_LCD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o test_LCD_map.ncd test_LCD.ngd test_LCD.pcf 
+par -w -intstyle ise -ol high -t 1 test_LCD_map.ncd test_LCD.ncd test_LCD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml test_LCD.twx test_LCD.ncd -o test_LCD.twr test_LCD.pcf -ucf LCD.ucf -ucf GenIO.ucf 
+sch2sym -intstyle ise -family spartan3e -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym test_LCD C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sym 

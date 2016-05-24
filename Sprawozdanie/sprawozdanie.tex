@@ -1,0 +1,176 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage{a4wide}
+\usepackage[latin2]{inputenc}
+\usepackage[english,polish]{babel}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{listings}%listing kodu
+\usepackage{indentfirst}
+\usepackage[T1]{fontenc}
+\usepackage{moreverb}
+\usepackage{mathptmx}
+\usepackage{setspace}
+\singlespacing
+
+\usepackage[hmargin=2.5cm,vmargin=2.5cm,bindingoffset=0.5cm]{geometry}
+\renewcommand{\baselinestretch}{1}
+
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=35mm,
+	right=35mm,
+	top=35mm,
+	bottom = 25mm
+}
+
+
+\begin{document}
+	\newgeometry{tmargin=2cm, bmargin=2cm, lmargin=2cm, rmargin=2cm}
+	
+	\begin{titlepage}
+		\center
+		\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+		
+		\textsc{\LARGE Politechnika Wroc³awska}\\[1.5cm]
+		\textsc{\Large Projekt}\\[0.5cm] 
+		\textsc{\large Uk³ady cyfrowe i systemy wbudowane 2}\\[0.5cm] 
+		
+		\HRule \\[0.4cm]
+		{ \huge \bfseries LCD}\\[0.4cm]
+		\HRule \\[1.5cm]
+		
+		\begin{minipage}{0.4\textwidth}
+			\begin{flushleft} \large
+				\emph{Authors:}\\
+				Rafa³ \textsc{Pieni±¿ek} 
+				\\ Jakub \textsc{Pomyka³a}
+			\end{flushleft}
+		\end{minipage}
+		~
+		\begin{minipage}{0.4\textwidth}
+			\begin{flushright} \large
+				\emph{Supervisor:} \\
+				Dr in¿. Jaros³aw \textsc{Sugier} 
+			\end{flushright}
+		\end{minipage}\\[4cm]
+		
+		{\large \today}\\[3cm]
+		
+		\vfill
+		
+	\end{titlepage}
+	
+	\section{Wstêp}
+	P³ytka startowa \texttt{Spartan-3E} posiada uk³ad LCD o rozmiarze 2x16 znaków. Uk³ad korzysta ze sterownika \texttt{ST7066U}, który jest kompatybilny z popularnym sterownikiem Hitachi HD44780
+
+\subsection{Cel projektu}
+Celem projektu by³a samodzielna implementacja modu³u LCD, który znajduje siê na p³ycie startowej Spartan-3E. W projekcie zosta³y stworzone nastêpuj±ce modu³y
+\begin{itemize}
+	\item Modu³ inicjalizacji
+	\item Modu³ konfiguracji
+	\item Multiplekser \texttt{4b\_2\_1}
+	\item Modu³ wysy³aj±cy pó³bajty
+\end{itemize}
+
+Po stworzeniu ka¿dego modu³u, by³y przeprowadzane testy behawiaoralne, które mia³y na celu sprawdziæ poprawno¶æ dzia³ania. W przeciwnym wypadku szukanie potencjalnych b³êdów by³oby bardzo utrudnione.   
+\section{Przebieg pracy}
+
+Do poprawnej pracy uk³adu niezbêdna jest konfiguracja pliku LCD.ucf oraz GenIO.ucf, których listingi zosta³y przedstawione ponizej. 
+\begin{verbatimtab}
+	NET "LCD_E" LOC = "M18" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW ;
+	NET "LCD_RS" LOC = "L18" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW ;
+	NET "LCD_RW" LOC = "L17" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW ;
+	NET "LCD_D<0>" LOC = "R15" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW ;
+	NET "LCD_D<1>" LOC = "R16" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW ;
+	NET "LCD_D<2>" LOC = "P17" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW ;
+	NET "LCD_D<3>" LOC = "M15" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW ;
+	NET "SF_CE" LOC = "D16" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW ;
+\end{verbatimtab}
+
+\begin{verbatimtab}
+	NET "Clk" LOC = "C9" | IOSTANDARD = LVTTL;
+	NET "Clk" PERIOD = 20.0ns HIGH 50%;
+\end{verbatimtab}
+
+\subsection{Inicjalizacja}
+Inicjalizacja uk³adu sk³ada z serii oczekiwañ i wysy³añ odpowiednich warto¶ci na magistralê SF\_D<11:8>. Ogólny schemat inicjalizacji zosta³ przedstawiony poni¿ej. Istona jest linia LCD\_E poniewa¿ dopiero w przypadku kiedy jej stan jest wysoki, uk³ad LCD przyjmuje dane z magistrali SF\_D.
+\begin{itemize}
+	\item Czekaj 15ms lub wiêcej
+	\item Ustaw na SF\_D<11:8> warto¶æ 0x3, ustaw stan LCD\_E na wysoki na 12 cykli
+	\item Czekaj 4.1ms lub wiêcej
+	\item Ustaw na SF\_D<11:8> warto¶æ 0x3, ustaw stan LCD\_E na wysoki na 12 cykli
+	\item Czekaj 0.1ms lub wiêcej
+	\item Ustaw na SF\_D<11:8> warto¶æ 0x3, ustaw stan LCD\_E na wysoki na 12 cykli
+	\item Czekaj 0.04ms lub wiêcej
+	\item Ustaw na SF\_D<11:8> warto¶æ 0x2, ustaw stan LCD\_E na wysoki na 12 cykli
+	\item Czekaj 0.04ms lub wiêcej
+\end{itemize}
+
+W projekcie zosta³ pod³±czony zegar 50MHz, dziêki czemu ustalone zosta³y minimalne ilo¶ci cykli jakie nale¿y odczekaæ miêdzy kolejnymi wysy³aniami. Modu³ inicjalizacyjny jest to maszyna stanów, która odmierza potrzebne warto¶ci czasowe przy wykorzystaniu licznika. 
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\linewidth]{stany-init.png}
+	\caption{Stany modu³u inicjalizacyjnego}
+\end{figure}
+
+\subsection{Konfiguracja}
+Po pomy¶lnej inicjalizacji modu³u LCD, sterowanie zostaje przydzielone modu³owy konfiguracji przy pomocy multiplexera \texttt{4b\_2\_1}. Wyj¶cie multipleksera zale¿y od stanu linii \texttt{set}. 
+
+\begin{verbatimtab}
+if(set = '1') then
+	line_out <= line_0; -- modu³ inicjalizacyjny 
+else
+	line_out <= line_1; -- modu³ konfiguracyjny
+end if;
+\end{verbatimtab}
+
+Linie \texttt{LCD\_RS} oraz \texttt{LCD\_RW}, które wchodz± w sklad modu³u s± stale ustawione na stan niski. Linia \texttt{SF\_CE} jest odpowiedzialna za komunikacjê z pamiêci± Intel StrataFlash. Ustawienie tej linii na \texttt{1} powoduje dezaktywacjê tej pamiêci. W takim przypadku uk³ad FPGA posiada pe³n± kontrolê na zapisem i odczytem do LCD. 
+
+\begin{verbatimtab}
+	LCD_RW <= '0';
+	LCD_RS <= '0';
+	SF_CE <= '1';
+\end{verbatimtab}
+W³a¶ciwa czê¶æ konfiguracyjna sk³ada siê z wys³ania czterech bajtów na magistralê SF\_C<11:8>. 
+\begin{itemize}
+\item Function Set - 0x28
+\item Entry Set - 0x06 w celu inkrementacji pozycji wska¼nika po ka¿dym wpisaniu znaku
+\item Display On/Off - 0x0E - w³±cznie migaj±cego wska¼nika
+\item Clear Display - 1.64ms 
+\end{itemize}
+Istotn± informacj± jest, ¿e wykonanie ka¿dej z tych instrukcji zajmuje pewien okres czasu. Dlatego te¿ po wyslaniu ka¿dej komendy wystêpuje stan który odmierza czas miêdzy kolejnymi wys³aniami bajtów. Czasy poszczególnych operacji znajduj± siê w dokumentacji uk³adu Spartan-3E [1].
+
+
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\linewidth]{stany-config.png}
+	\caption{Stany modu³u konfiguracyjengo}
+\end{figure}
+
+\subsection{Wysy³anie bajtów i pó³-bajtów}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\linewidth]{after0F-2.PNG}
+	\caption{Przyk³ad wys³ania ca³ego bajtu w programie ModelSim}
+\end{figure}
+	\section{Podsumowanie}
+	Projekt zawiera poprawn± inicjalizacjê oraz podstawow± konfiguracê ca³ego uk³adu LCD, co pozwala na dalsz± modyfikacjê w postaci obs³ugi wejscia danych od u¿ytkownika.
+	Nie zosta³ zrealizowany modu³, który pozwal³by na wy¶wietlanie znaków wprowadzonych przez u¿ytkownika. Taka funkcjonalno¶æ mog³aby zostaæ zrealizowana poprzez rozszerzenie modu³u konfiguracyjnego w postaci dodania dodatkowych stanów. Lepsz± opcj± by³by jednak stworzenie osobnego modu³u który odbiera³by bajt ze znakiem od u¿ytkownika i przesy³a³ go dalej do uk³adu LCD w odpowiednich odstêpach czasowych. 
+	\begin{thebibliography}{999}
+		\bibitem{szpartan} 
+		{\em http://www.xilinx.com/support/documentation/boards\_and\_kits/ug230.pdf}, \\
+		dokumentacja uk³adu Szpartan-3E.
+	
+			\bibitem{sitronix} 
+			{\em http://www.sitronix.com.tw/sitronix/product.nsf/Doc/ST7066U?OpenDocument}, \\
+			dokumentacja sterownika Sitronix ST7066U.
+		
+	\end{thebibliography}	
+\end{document}

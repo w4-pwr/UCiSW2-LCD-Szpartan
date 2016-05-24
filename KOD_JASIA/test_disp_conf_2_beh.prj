@@ -1,0 +1,2 @@
+vhdl work "Display_Configuration.vhd"
+vhdl work "test_disp_conf_2.vhd"

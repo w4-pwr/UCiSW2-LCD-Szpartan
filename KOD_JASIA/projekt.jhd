@@ -1,0 +1,3 @@
+MODULE projekt
+	SUBMODULE test_LCD
+		INSTANCE XLXI_1

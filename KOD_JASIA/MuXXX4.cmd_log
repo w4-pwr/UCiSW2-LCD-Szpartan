@@ -1,0 +1,2 @@
+vhdtdtfi -lib work MuXXX4.vhd -prj LCD -o MuXXX4.spl -module MuXXX4 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MuXXX4.spl C:/Users/lab/Documents/MB_JM/LCD/MuXXX4.sym 

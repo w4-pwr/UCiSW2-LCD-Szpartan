@@ -1,0 +1,10 @@
+vhdtdtfi -lib work lcd_config.vhd -prj LCD -o lcd_config.spl -module lcd_config -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e lcd_config.spl C:/xlinxprj/4042016/LCD/lcd_config.sym 
+vhdtdtfi -lib work lcd_config.vhd -prj LCD -o lcd_config.spl -module lcd_config -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e lcd_config.spl C:/Users/lab/Desktop/17042016PRZED/LCD/lcd_config.sym 
+vhdtdtfi -lib work lcd_config.vhd -prj LCD -o lcd_config.spl -module lcd_config -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e lcd_config.spl C:/Users/lab/Desktop/17042016PRZED/LCD/lcd_config.sym 
+vhdtdtfi -lib work lcd_config.vhd -prj LCD -o lcd_config.spl -module lcd_config -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e lcd_config.spl C:/Users/lab/Desktop/17042016PRZED/LCD/lcd_config.sym 
+vhdtdtfi -lib work lcd_config.vhd -prj LCD -o lcd_config.spl -module lcd_config -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e lcd_config.spl F:/ucisw/1305PO/17042016PRZED/LCD/lcd_config.sym 

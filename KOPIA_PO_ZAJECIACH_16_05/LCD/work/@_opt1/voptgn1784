@@ -1,0 +1,359 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\XilinxPrj\LCD
+T_opt
+VF7OF@jn?PT8[l3KS4V=@^2
+04 13 8 work send_4bits_tb behavior 1
+=1-002215104676-57021ad3-27b-42c
+Z1 o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+Z2 OE;O;10.1c;51
+Z3 dC:\XilinxPrj\LCD
+T_opt1
+Vh_OU2k2PoD:=Ld[FCH_;F1
+Z4 04 28 10 work lcd_module_lcd_module_sch_tb behavioral 1
+=1-002215104676-57398774-276-65c
+R1
+n@_opt1
+R2
+T_opt2
+VYzlO:Be@=5KZfMgF@CllR2
+04 8 10 work lcd_init behavioral 1
+=1-002215104676-57020a2b-ab-f94
+R1
+n@_opt2
+R2
+R3
+T_opt3
+V[C@JolOA6?Q_K4oGFFLHi3
+R4
+=1-002215104676-573976cc-35c-cd0
+R1
+n@_opt3
+R2
+R3
+Elcd_config
+Z5 w1463386478
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z8 dC:\Users\lab\Desktop\DZIAUA
+Z9 8lcd_config.vhd
+Z10 Flcd_config.vhd
+l0
+L32
+Vm7<0mW8BWbZ=o@UED5LU_3
+Z11 OE;C;10.1c;51
+31
+Z12 !s108 1463388019.148000
+Z13 !s90 -reportprogress|300|-explicit|-93|lcd_config.vhd|
+Z14 !s107 lcd_config.vhd|
+Z15 o-explicit -93
+Z16 tExplicit 1
+!s100 Tef_DdeX6;_Nn2`Wk=inR0
+!i10b 1
+Abehavioral
+R6
+R7
+DEx4 work 10 lcd_config 0 22 m7<0mW8BWbZ=o@UED5LU_3
+l48
+L44
+V1Nd]iZ8z@h3[gHP8]^Fj80
+R11
+31
+R12
+R13
+R14
+R15
+R16
+!s100 lh`ZzZH0A0<>53I1dV8?>0
+!i10b 1
+Elcd_init
+Z17 w1463132201
+R6
+R7
+R8
+Z18 8lcd_init.vhd
+Z19 Flcd_init.vhd
+l0
+L32
+V^7=O7U5okEm<DBcY_a?Zj0
+R11
+31
+Z20 !s108 1463388018.821000
+Z21 !s90 -reportprogress|300|-explicit|-93|lcd_init.vhd|
+Z22 !s107 lcd_init.vhd|
+R15
+R16
+!s100 ^>^?8WWk_5mQbY`KRZRjF1
+!i10b 1
+Abehavioral
+R6
+R7
+DEx4 work 8 lcd_init 0 22 ^7=O7U5okEm<DBcY_a?Zj0
+l49
+L43
+VUoAk=nok;5U]dnh37>;3k2
+R11
+31
+R20
+R21
+R22
+R15
+R16
+!s100 T;XDO@o]UhHQclCVMm18?3
+!i10b 1
+Elcd_init_tb
+Z23 w1460967950
+R6
+R7
+Z24 dC:\Users\lab\209847\18042016PO\17042016PRZED\LCD
+Z25 8lcd_init_tb.vhd
+Z26 Flcd_init_tb.vhd
+l0
+L35
+VgC>XCaim;lgE]RdQC0`V50
+R11
+31
+Z27 !s108 1463131469.744000
+Z28 !s90 -reportprogress|300|-explicit|-93|lcd_init_tb.vhd|
+Z29 !s107 lcd_init_tb.vhd|
+R15
+R16
+!s100 Uk:DU6R<Jmb[BWoF>fJS51
+!i10b 1
+Abehavior
+R6
+R7
+DEx4 work 11 lcd_init_tb 0 22 gC>XCaim;lgE]RdQC0`V50
+l67
+L38
+VfBNzh2Wm>ge=_iQAh2FRK1
+R11
+31
+R27
+R28
+R29
+R15
+R16
+!s100 F:oiz<5P]aO>U>]D2Dl=k1
+!i10b 1
+Elcd_module
+Z30 w1463387867
+Z31 DPx6 unisim 11 vcomponents 0 22 ^SgSiH]fe0j`VL_8Rhmkj2
+Z32 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R6
+R7
+R8
+Z33 8lcd_module.vhf
+Z34 Flcd_module.vhf
+l0
+L28
+VjgI@e9[S9^H8UCEDBEJYP2
+R11
+31
+Z35 !s108 1463388019.382000
+Z36 !s90 -reportprogress|300|-explicit|-93|lcd_module.vhf|
+Z37 !s107 lcd_module.vhf|
+R15
+R16
+!s100 3e]kdO>KV@h337_Gm7h=D1
+!i10b 1
+Abehavioral
+R31
+R32
+R6
+R7
+DEx4 work 10 lcd_module 0 22 jgI@e9[S9^H8UCEDBEJYP2
+l120
+L37
+VczZVfa7kg1fb^i]zm:NP^1
+R11
+31
+R35
+R36
+R37
+R15
+R16
+!s100 mP3lM^@WiLk]4An9XHg8>2
+!i10b 1
+Elcd_module_lcd_module_sch_tb
+Z38 w1463388011
+R31
+R32
+R6
+R7
+R8
+Z39 8lcd_module_tb.vhd
+Z40 Flcd_module_tb.vhd
+l0
+L20
+V7Ul>Ue[ligE>O1Akogc?]1
+R11
+31
+Z41 !s108 1463388019.991000
+Z42 !s90 -reportprogress|300|-explicit|-93|lcd_module_tb.vhd|
+Z43 !s107 lcd_module_tb.vhd|
+R15
+R16
+!s100 EZ9:I3@QVGUAiCFVCAUm02
+!i10b 1
+Abehavioral
+R31
+R32
+R6
+R7
+DEx4 work 28 lcd_module_lcd_module_sch_tb 0 22 7Ul>Ue[ligE>O1Akogc?]1
+l41
+L22
+VZM5eBl^9Ig62JFB`BgK8Y0
+R11
+31
+R41
+R42
+R43
+R15
+R16
+!s100 IcJ?Rc2BPNTi=;eEhniXT0
+!i10b 1
+Emul_4b_2_1
+Z44 w1463133111
+R6
+R7
+R8
+Z45 8mul_4b_2_1.vhd
+Z46 Fmul_4b_2_1.vhd
+l0
+L32
+VBlPkK]0@m^X2Z4IH^2jQP3
+R11
+31
+Z47 !s108 1463388018.571000
+Z48 !s90 -reportprogress|300|-explicit|-93|mul_4b_2_1.vhd|
+Z49 !s107 mul_4b_2_1.vhd|
+R15
+R16
+!s100 oUeCO6CgM9Bm]KKfPRG=[1
+!i10b 1
+Abehavioral
+R6
+R7
+DEx4 work 10 mul_4b_2_1 0 22 BlPkK]0@m^X2Z4IH^2jQP3
+l41
+L39
+VXCXdhYmak_NkIVEELKlNB2
+R11
+31
+R47
+R48
+R49
+R15
+R16
+!s100 W5D4Ho]08W`Q;0AYOM45d0
+!i10b 1
+Esend_4bits
+Z50 w1463132881
+R6
+R7
+R8
+Z51 8send_4bits.vhd
+Z52 Fsend_4bits.vhd
+l0
+L31
+VidcNH8[hEg]^3lO:zCgce1
+R11
+31
+Z53 !s108 1463388018.337000
+Z54 !s90 -reportprogress|300|-explicit|-93|send_4bits.vhd|
+Z55 !s107 send_4bits.vhd|
+R15
+R16
+!s100 zd2KL5B2_];WGOL_iXRF^1
+!i10b 1
+Abehavioral
+R6
+R7
+DEx4 work 10 send_4bits 0 22 idcNH8[hEg]^3lO:zCgce1
+l46
+L40
+VoZfo3Wl`GmL`COJdjWCPY1
+R11
+31
+R53
+R54
+R55
+R15
+R16
+!s100 KVb8cZ2>OH@L0B;^[lbj>2
+!i10b 1
+Esend_4bits_tb
+Z56 w1459756023
+R6
+R7
+Z57 dC:\XilinxPrj\4042016\LCD
+Z58 8send_4bits_tb.vhd
+Z59 Fsend_4bits_tb.vhd
+l0
+L35
+V0ii=<NGCkBlIQLSJ@Jm<^1
+R11
+31
+Z60 !s108 1459756043.970000
+Z61 !s90 -reportprogress|300|-explicit|-93|send_4bits_tb.vhd|
+Z62 !s107 send_4bits_tb.vhd|
+R15
+R16
+!s100 lNe[d_ZzNbUBXP`RVbmHI1
+!i10b 1
+Abehavior
+R6
+R7
+DEx4 work 13 send_4bits_tb 0 22 0ii=<NGCkBlIQLSJ@Jm<^1
+l67
+L38
+VA[=bz<bGQPCbMT@7ib:6V2
+R11
+31
+R60
+R61
+R62
+R15
+R16
+!s100 :B<C<:[TA1^CjN0YPHcD10
+!i10b 1
+Esend_byte
+Z63 w1460882624
+R6
+R7
+R8
+Z64 8send_byte.vhd
+Z65 Fsend_byte.vhd
+l0
+L32
+VN@^=?L4>_kc@8;hDeF5l^0
+R11
+31
+Z66 !s108 1463388018.072000
+Z67 !s90 -reportprogress|300|-explicit|-93|send_byte.vhd|
+Z68 !s107 send_byte.vhd|
+R15
+R16
+!s100 cn7UP3LGRaV9KXf<PJjmn1
+!i10b 1
+Abehavioral
+R6
+R7
+DEx4 work 9 send_byte 0 22 N@^=?L4>_kc@8;hDeF5l^0
+l48
+L42
+VM@@EM<nJ3GBIePll7RG`l1
+R11
+31
+R66
+R67
+R68
+R15
+R16
+!s100 YXaIQY@U>[oMMAGXNO8J^0
+!i10b 1

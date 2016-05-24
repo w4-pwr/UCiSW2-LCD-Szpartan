@@ -1,0 +1,7 @@
+		BUSY <= x"0";
+      -- insert stimulus here 
+		LCD_E_IN <= x"0";
+      LCD_RS_IN <=x"0";
+      LCD_D_IN <= x"3";
+		GO<= '1';
+

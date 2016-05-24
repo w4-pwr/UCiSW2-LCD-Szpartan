@@ -1,0 +1,8 @@
+vhdl work "C:\Users\lab\Documents\MB_JM\LCD\Poweron_init.vhd"
+vhdl work "C:\Users\lab\Documents\MB_JM\LCD\Nibble_Send.vhd"
+vhdl work "C:\Users\lab\Documents\MB_JM\LCD\MuXXX8.vhd"
+vhdl work "C:\Users\lab\Documents\MB_JM\LCD\MuXXX4.vhd"
+vhdl work "C:\Users\lab\Documents\MB_JM\LCD\LCD_Write.vhd"
+vhdl work "C:\Users\lab\Documents\MB_JM\LCD\Display_Configuration.vhd"
+vhdl work "C:\Users\lab\Documents\MB_JM\LCD\Byte_Send.vhd"
+vhdl work "C:\Users\lab\Documents\MB_JM\LCD\test_LCD.vhf"

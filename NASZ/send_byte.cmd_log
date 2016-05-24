@@ -1,0 +1,4 @@
+vhdtdtfi -lib work send_byte.vhd -prj LCD -o send_byte.spl -module send_byte -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e send_byte.spl C:/xlinxprj/4042016/LCD/send_byte.sym 
+vhdtdtfi -lib work send_byte.vhd -prj LCD -o send_byte.spl -module send_byte -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e send_byte.spl C:/Users/lab/Desktop/17042016PRZED/LCD/send_byte.sym 

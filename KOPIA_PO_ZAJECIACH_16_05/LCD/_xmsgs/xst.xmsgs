@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/lcd_module</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">F:/ucisw/1305PO/17042016PRZED/LCD/lcd_module.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/lab/Desktop/DZIAUA/lcd_module.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/lcd_module/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">F:/ucisw/1305PO/17042016PRZED/LCD/lcd_module.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/lab/Desktop/DZIAUA/lcd_module.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/lcd_config</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">F:/ucisw/1305PO/17042016PRZED/LCD/lcd_config.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/lab/Desktop/DZIAUA/lcd_config.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/lcd_config/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">F:/ucisw/1305PO/17042016PRZED/LCD/lcd_config.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/lab/Desktop/DZIAUA/lcd_config.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/lcd_init</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">F:/ucisw/1305PO/17042016PRZED/LCD/lcd_init.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/lab/Desktop/DZIAUA/lcd_init.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/lcd_init/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">F:/ucisw/1305PO/17042016PRZED/LCD/lcd_init.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/lab/Desktop/DZIAUA/lcd_init.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mul_4b_2_1</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">F:/ucisw/1305PO/17042016PRZED/LCD/mul_4b_2_1.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/lab/Desktop/DZIAUA/mul_4b_2_1.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mul_4b_2_1/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">F:/ucisw/1305PO/17042016PRZED/LCD/mul_4b_2_1.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/lab/Desktop/DZIAUA/mul_4b_2_1.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/send_4bits</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">F:/ucisw/1305PO/17042016PRZED/LCD/send_4bits.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/lab/Desktop/DZIAUA/send_4bits.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/send_4bits/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">F:/ucisw/1305PO/17042016PRZED/LCD/send_4bits.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/lab/Desktop/DZIAUA/send_4bits.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/send_byte</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">F:/ucisw/1305PO/17042016PRZED/LCD/send_byte.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/lab/Desktop/DZIAUA/send_byte.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/send_byte/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">F:/ucisw/1305PO/17042016PRZED/LCD/send_byte.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/lab/Desktop/DZIAUA/send_byte.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/lab/Desktop/DZIAUA/lcd_module.vhf</arg>&quot; line <arg fmt="%d" index="2">142</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">busy</arg>&apos; of component &apos;<arg fmt="%s" index="4">lcd_config</arg>&apos;.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">data_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">XLXI_13</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">data_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">XLXI_13</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">data_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">XLXI_13</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">byte_out_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">XLXI_14</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">byte_out_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">XLXI_14</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">byte_out_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">XLXI_14</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">LCD_D_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">XLXI_22</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">LCD_D_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">XLXI_22</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">byte_out_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lcd_config</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">byte_out_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lcd_config</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">byte_out_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lcd_config</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">LCD_D_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lcd_init</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">LCD_D_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lcd_init</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">XLXI_22/state_of_init_FSM_FFd11</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">lcd_module</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">XLXI_13/data_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lcd_module</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">XLXI_13/data_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lcd_module</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">XLXI_13/data_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lcd_module</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_14/busy</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd_module</arg>&gt;.
+</msg>
+
+</messages>
+

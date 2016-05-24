@@ -1,0 +1,39 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/lab/Documents/MB_JM/LCD/test_LCD_test_LCD_sch_tb_isim_beh.exe -prj C:/Users/lab/Documents/MB_JM/LCD/test_LCD_test_LCD_sch_tb_beh.prj work.test_LCD_test_LCD_sch_tb 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/lab/Documents/MB_JM/LCD/Poweron_init.vhd" into library work
+Parsing VHDL file "C:/Users/lab/Documents/MB_JM/LCD/Nibble_Send.vhd" into library work
+Parsing VHDL file "C:/Users/lab/Documents/MB_JM/LCD/MuXXX8.vhd" into library work
+Parsing VHDL file "C:/Users/lab/Documents/MB_JM/LCD/MuXXX4.vhd" into library work
+Parsing VHDL file "C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.vhd" into library work
+Parsing VHDL file "C:/Users/lab/Documents/MB_JM/LCD/Display_Configuration.vhd" into library work
+Parsing VHDL file "C:/Users/lab/Documents/MB_JM/LCD/Byte_Send.vhd" into library work
+Parsing VHDL file "C:/Users/lab/Documents/MB_JM/LCD/test_LCD.vhf" into library work
+Parsing VHDL file "C:/Users/lab/Documents/MB_JM/LCD/tetetetete.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 116292 KB
+Fuse CPU Usage: 373 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling architecture behavioral of entity Nibble_Send [nibble_send_default]
+Compiling architecture behavioral of entity Byte_Send [byte_send_default]
+Compiling architecture behavioral of entity Poweron_init [poweron_init_default]
+Compiling architecture or2_v of entity OR2 [or2_default]
+Compiling architecture behavioral of entity Display_Configuration [display_configuration_default]
+Compiling architecture behavioral of entity LCD_Write [lcd_write_default]
+Compiling architecture inv_v of entity INV [inv_default]
+Compiling architecture behavioral of entity MuXXX4 [muxxx4_default]
+Compiling architecture behavioral of entity MuXXX8 [muxxx8_default]
+Compiling architecture behavioral of entity test_LCD [test_lcd_default]
+Compiling architecture behavioral of entity test_lcd_test_lcd_sch_tb
+Time Resolution for simulation is 1ps.
+Waiting for 5 sub-compilation(s) to finish...
+Compiled 25 VHDL Units
+Built simulation executable C:/Users/lab/Documents/MB_JM/LCD/test_LCD_test_LCD_sch_tb_isim_beh.exe
+Fuse Memory Usage: 131956 KB
+Fuse CPU Usage: 514 ms

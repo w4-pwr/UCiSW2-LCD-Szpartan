@@ -1,0 +1,10 @@
+[Inputs]
+Clk_50MHz
+Send_In
+Send_Nibble_Ready
+=Byte[7:0]=
+[Outputs]
+Send_Out
+Ready
+=Nibble[3:0]=
+[BiDir]

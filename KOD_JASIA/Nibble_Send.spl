@@ -1,0 +1,9 @@
+[Inputs]
+Send
+Clk_50MHz
+=Nibble[3:0]=
+[Outputs]
+LCD_E
+Ready
+=SF_D[3:0]=
+[BiDir]

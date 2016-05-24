@@ -1,0 +1,9 @@
+[Inputs]
+GO
+SENT
+Clk
+[Outputs]
+BUSY
+SENDING
+=LCD_D[3:0]=
+[BiDir]

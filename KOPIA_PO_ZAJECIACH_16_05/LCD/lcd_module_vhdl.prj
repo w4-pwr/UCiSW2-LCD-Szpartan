@@ -1,0 +1,6 @@
+vhdl work "C:\Users\lab\Desktop\DZIAUA\send_byte.vhd"
+vhdl work "C:\Users\lab\Desktop\DZIAUA\send_4bits.vhd"
+vhdl work "C:\Users\lab\Desktop\DZIAUA\mul_4b_2_1.vhd"
+vhdl work "C:\Users\lab\Desktop\DZIAUA\lcd_init.vhd"
+vhdl work "C:\Users\lab\Desktop\DZIAUA\lcd_config.vhd"
+vhdl work "C:\Users\lab\Desktop\DZIAUA\lcd_module.vhf"

@@ -1,0 +1,9 @@
+[Inputs]
+Clk_50Mhz
+Start
+Send_Ready
+[Outputs]
+Send
+Done
+=Nibble[3:0]=
+[BiDir]

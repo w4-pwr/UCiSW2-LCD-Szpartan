@@ -1,0 +1,99 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\XilinxPrj\LCD
+T_opt
+Vk;Ok[j6W7GmQmiSZDGIS;0
+Z1 04 8 10 work lcd_init behavioral 1
+=1-002215104676-570208ef-37e-9ec
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+Z3 OE;O;10.1c;51
+Z4 dC:\XilinxPrj\LCD
+T_opt1
+Vdi?US=@[K_oSFLZBOLmF]0
+04 11 8 work lcd_init_tb behavior 1
+=1-002215104676-56dd4db4-263-f2c
+R2
+n@_opt1
+R3
+R4
+T_opt2
+VYzlO:Be@=5KZfMgF@CllR2
+R1
+=1-002215104676-57020a2b-ab-f94
+R2
+n@_opt2
+R3
+Elcd_init
+Z5 w1459598520
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z8 dC:\XilinxPrj\4042016\LCD
+Z9 8lcd_init.vhd
+Z10 Flcd_init.vhd
+l0
+L32
+Vnme:<B_SV:f0kYX2IeCVa2
+Z11 OE;C;10.1c;51
+31
+Z12 !s108 1459751466.812000
+Z13 !s90 -reportprogress|300|-explicit|-93|lcd_init.vhd|
+Z14 !s107 lcd_init.vhd|
+Z15 o-explicit -93
+Z16 tExplicit 1
+!s100 8UAhjX^Dj?EVSCZ:7k<eU2
+!i10b 1
+Abehavioral
+R6
+R7
+DEx4 work 8 lcd_init 0 22 nme:<B_SV:f0kYX2IeCVa2
+l47
+L41
+VY[UHD<W4Fheja@SM^@d_J3
+R11
+31
+R12
+R13
+R14
+R15
+R16
+!s100 FoG9K<Y^aL6l<CS1gKVoo0
+!i10b 1
+Elcd_init_tb
+Z17 w1459751048
+R6
+R7
+R8
+Z18 8lcd_init_tb.vhd
+Z19 Flcd_init_tb.vhd
+l0
+L35
+VgC>XCaim;lgE]RdQC0`V50
+R11
+31
+Z20 !s90 -reportprogress|300|-explicit|-93|lcd_init_tb.vhd|
+R15
+R16
+Z21 !s107 lcd_init_tb.vhd|
+!s100 Uk:DU6R<Jmb[BWoF>fJS51
+!i10b 1
+!s108 1459751093.078000
+Abehavior
+R6
+R7
+DEx4 work 11 lcd_init_tb 0 22 gC>XCaim;lgE]RdQC0`V50
+l75
+L38
+VY^:LbbJ]a@d^0loP;G5B:0
+R11
+31
+R20
+R15
+R16
+R4
+R21
+!s108 1457343924.159000
+!s100 4;I7_JKQa2NW1g[]X]hm90
+!i10b 1

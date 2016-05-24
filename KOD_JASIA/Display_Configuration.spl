@@ -1,0 +1,9 @@
+[Inputs]
+Start
+Clk_50Mhz
+Byte_send_ready
+[Outputs]
+Send
+Done
+=Byte[7:0]=
+[BiDir]

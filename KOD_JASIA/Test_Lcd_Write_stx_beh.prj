@@ -1,0 +1,2 @@
+vhdl isim_temp "LCD_Write.vhd"
+vhdl isim_temp "Test_Lcd_Write.vhd"

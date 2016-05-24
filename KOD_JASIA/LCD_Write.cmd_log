@@ -1,0 +1,53 @@
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 
+vhdtdtfi -lib work LCD_Write.vhd -prj LCD -o LCD_Write.spl -module LCD_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w LCD_Write.spl C:/Users/lab/Documents/MB_JM/LCD/LCD_Write.sym 

@@ -1,0 +1,53 @@
+V3 36
+FL C:/Users/lab/Desktop/17042016PRZED/LCD/lcd_config.vhd 2016/04/18.09:12:34 P.20131013
+EN work/lcd_config 1460966411 \
+      FL C:/Users/lab/Desktop/17042016PRZED/LCD/lcd_config.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/lcd_config/Behavioral 1460966412 \
+      FL C:/Users/lab/Desktop/17042016PRZED/LCD/lcd_config.vhd EN work/lcd_config 1460966411
+FL C:/Users/lab/Desktop/17042016PRZED/LCD/lcd_init.vhd 2016/04/18.09:23:03 P.20131013
+EN work/lcd_init 1460966415 \
+      FL C:/Users/lab/Desktop/17042016PRZED/LCD/lcd_init.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/lcd_init/Behavioral 1460966416 \
+      FL C:/Users/lab/Desktop/17042016PRZED/LCD/lcd_init.vhd EN work/lcd_init 1460966415
+FL C:/Users/lab/Desktop/17042016PRZED/LCD/lcd_module.vhf 2016/04/18.10:00:03 P.20131013
+EN work/lcd_module 1460966417 \
+      FL C:/Users/lab/Desktop/17042016PRZED/LCD/lcd_module.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/lcd_module/BEHAVIORAL 1460966418 \
+      FL C:/Users/lab/Desktop/17042016PRZED/LCD/lcd_module.vhf EN work/lcd_module 1460966417 \
+      CP send_4bits CP INV CP send_byte CP lcd_config CP mul_4b_2_1 CP OR2 CP lcd_init
+FL C:/Users/lab/Desktop/17042016PRZED/LCD/mul_4b_2_1.vhd 2016/04/18.09:06:59 P.20131013
+EN work/mul_4b_2_1 1460966413 \
+      FL C:/Users/lab/Desktop/17042016PRZED/LCD/mul_4b_2_1.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/mul_4b_2_1/Behavioral 1460966414 \
+      FL C:/Users/lab/Desktop/17042016PRZED/LCD/mul_4b_2_1.vhd EN work/mul_4b_2_1 1460966413
+FL C:/Users/lab/Desktop/17042016PRZED/LCD/send_4bits.vhd 2016/04/04.09:42:48 P.20131013
+EN work/send_4bits 1460966407 \
+      FL C:/Users/lab/Desktop/17042016PRZED/LCD/send_4bits.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/send_4bits/Behavioral 1460966408 \
+      FL C:/Users/lab/Desktop/17042016PRZED/LCD/send_4bits.vhd EN work/send_4bits 1460966407
+FL C:/Users/lab/Desktop/17042016PRZED/LCD/send_byte.vhd 2016/04/17.10:43:44 P.20131013
+EN work/send_byte 1460966409 \
+      FL C:/Users/lab/Desktop/17042016PRZED/LCD/send_byte.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/send_byte/Behavioral 1460966410 \
+      FL C:/Users/lab/Desktop/17042016PRZED/LCD/send_byte.vhd EN work/send_byte 1460966409
+FL C:/XilinxPrj/4042016/LCD/lcd_init.vhd 2016/04/02.14:02:00 P.20131013
+FL C:/XilinxPrj/4042016/LCD/lcd_init_schematic.vhf 2016/04/04.08:44:23 P.20131013
+EN work/lcd_init_schematic 0 FL C:/XilinxPrj/4042016/LCD/lcd_init_schematic.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/lcd_init_schematic/BEHAVIORAL 0 \
+      FL C:/XilinxPrj/4042016/LCD/lcd_init_schematic.vhf \
+      EN work/lcd_init_schematic 0 CP lcd_init
+FL C:/XilinxPrj/4042016/LCD/lcd_module.vhf 2016/04/04.10:41:47 P.20131013
+FL C:/XilinxPrj/4042016/LCD/send_4bits.vhd 2016/04/04.09:42:47 P.20131013
+FL C:/xlinxprj/4042016/LCD/lcd_init.vhd 2016/04/04.01:51:04 P.20131013
+FL C:/xlinxprj/4042016/LCD/lcd_module.vhf 2016/04/17.02:34:28 P.20131013
+FL C:/xlinxprj/4042016/LCD/send_4bits.vhd 2016/04/04.00:42:48 P.20131013
+FL C:/xlinxprj/4042016/LCD/send_byte.vhd 2016/04/17.01:43:44 P.20131013

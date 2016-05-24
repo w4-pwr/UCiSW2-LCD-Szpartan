@@ -1,0 +1,3 @@
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/lab/Documents/MB_JM/LCD/projekt.vhf,-w,C:/Users/lab/Documents/MB_JM/LCD/projekt.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/lab/Documents/MB_JM/LCD/test_LCD.vhf,-w,C:/Users/lab/Documents/MB_JM/LCD/test_LCD.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/lab/Documents/MB_JM/LCD/projekt.vhf,-w,C:/Users/lab/Documents/MB_JM/LCD/projekt.sch

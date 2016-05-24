@@ -1,0 +1,3 @@
+vhdtdtfi -lib work configuration.vhd -prj LCD -o .spl -module {} -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work configuration.vhd -prj LCD -o .spl -module {} -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -prj LCD -o C:/xlinxprj/4042016/LCD/.vhi -module "" -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work configuration.vhd 
