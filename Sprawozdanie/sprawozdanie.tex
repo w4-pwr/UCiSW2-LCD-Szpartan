@@ -62,21 +62,36 @@
 		
 	\end{titlepage}
 	
-	\section{Wstêp}
-	P³ytka startowa \texttt{Spartan-3E} posiada uk³ad LCD o rozmiarze 2x16 znaków. Uk³ad korzysta ze sterownika \texttt{ST7066U}, który jest kompatybilny z popularnym sterownikiem Hitachi HD44780
+\section{Temat}
+	\subsection{Cel i zakres pracy}
+	\subsection{Zagadnienia teoretyczne}
+	//na koncu
+	\subsection{Opis sprzêtu}
+P³ytka startowa \texttt{Spartan-3E} posiada uk³ad LCD o rozmiarze 2x16 znaków. Uk³ad korzysta ze sterownika \texttt{ST7066U}, który jest kompatybilny z popularnym sterownikiem Hitachi HD44780. 
 
-\subsection{Cel projektu}
-Celem projektu by³a samodzielna implementacja modu³u LCD, który znajduje siê na p³ycie startowej Spartan-3E. W projekcie zosta³y stworzone nastêpuj±ce modu³y
+\section{Opis projektu}
+% Hierarchia ¼róde³ wsadze screena z xlinxa \n
+//schemat wsadze screena z xlinxa
+//
+ Projekt zosta³ rozdzielony na poszczególne modu³y. Wprowadzenie modularyzacji umo¿liwi³o wyszczególnienie poszczególnych fragmentów, które s³u¿± do konkretnych celów. Zatem w projekcie wystêpuj± poni¿sze elementy: 
 \begin{itemize}
-	\item Modu³ inicjalizacji
-	\item Modu³ konfiguracji
-	\item Multiplekser \texttt{4b\_2\_1}
+	\item Modu³ inicjalizacji - jest odpowiedzialny za wysy³anie danych inicjalizacyjnych do wy¶wietlacza w odpowiedniej czêstotliwo¶ci. Jest to konieczne do ustabilizowania po³±czenia interfejsu czterobitowego. Modu³ posiada nastêpuj±ce wej¶cia i wyj¶cia:
+		\begin{itemize}
+			\item 
+		\end{itemize}
+	\item Modu³ konfiguracji -  oczekuje na sygna³ start, nastêpnie rozpoczyna przesy³anie warto¶ci konfiguruj±cych wy¶wietlacz.
+		\begin{itemize}
+			\item wej¶cie zegarowe
+			\item 
+		\end{itemize}
+	\item Multiplekser \texttt{4b\_2\_1} Modu³ ten by³ konieczny aby prze³±czyæ magistralê przesy³aj±c± dane do LCD. Pocz±tkowo modu³ wysy³aj±cy pó³bajty pobiera³ dane z modu³u inicjlizacji, 
 	\item Modu³ wysy³aj±cy pó³bajty
+	\item Modu³ wysy³aj±cy bajty
 \end{itemize}
 
-Po stworzeniu ka¿dego modu³u, by³y przeprowadzane testy behawiaoralne, które mia³y na celu sprawdziæ poprawno¶æ dzia³ania. W przeciwnym wypadku szukanie potencjalnych b³êdów by³oby bardzo utrudnione.   
-\section{Przebieg pracy}
-
+Po stworzeniu ka¿dego modu³u, by³y przeprowadzane testy behawioralne, które mia³y na celu sprawdziæ poprawno¶æ dzia³ania. W przeciwnym wypadku szukanie potencjalnych b³êdów by³oby bardzo utrudnione. Modu³ stworzony w ramach projektu jest odpowiedzialny za prawid³ow± inicjalizacjê  i konfiguracjê wy¶wietlacza. Jest to bezpo¶rednio zwi±zane z odpowiednim wysy³aniem danych oraz synchronizacj± wszystkich procesów. Zastosowane rozwi±zania zwi±zane s± z powiadomieniem zwrotnym \textit{callback}. Oznacza to, ¿e przygotowany modu³, rozwi±zuj±cy pojedyncze kwestie implementacji, informowa³ modu³ z niego korzystaj±cy ( kliencki) o zakoñczeniu pracy. Zastosowanie tego rozwi±zania pozwala na unikniêcie problemów z odpowiedni± czêstotliwo¶ci± wysy³ania danych.
+\section{Implementacja}
+Projekt zosta³ zaimplementowany w ¶rodowisku Xlinx w wersji ???. Poprawno¶æ dzia³ania poszczególnych modu³ów, oraz w fazie koñcowej ca³o¶ci projektu by³a testowana w ¶rodowisku ModelSim. 
 Do poprawnej pracy uk³adu niezbêdna jest konfiguracja pliku LCD.ucf oraz GenIO.ucf, których listingi zosta³y przedstawione ponizej. 
 \begin{verbatimtab}
 	NET "LCD_E" LOC = "M18" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW ;
