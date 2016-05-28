@@ -70,26 +70,91 @@
 P³ytka startowa \texttt{Spartan-3E} posiada uk³ad LCD o rozmiarze 2x16 znaków. Uk³ad korzysta ze sterownika \texttt{ST7066U}, który jest kompatybilny z popularnym sterownikiem Hitachi HD44780. 
 
 \section{Opis projektu}
-% Hierarchia ¼róde³ wsadze screena z xlinxa \n
-//schemat wsadze screena z xlinxa
-//
- Projekt zosta³ rozdzielony na poszczególne modu³y. Wprowadzenie modularyzacji umo¿liwi³o wyszczególnienie poszczególnych fragmentów, które s³u¿± do konkretnych celów. Zatem w projekcie wystêpuj± poni¿sze elementy: 
-\begin{itemize}
-	\item Modu³ inicjalizacji - jest odpowiedzialny za wysy³anie danych inicjalizacyjnych do wy¶wietlacza w odpowiedniej czêstotliwo¶ci. Jest to konieczne do ustabilizowania po³±czenia interfejsu czterobitowego. Modu³ posiada nastêpuj±ce wej¶cia i wyj¶cia:
-		\begin{itemize}
-			\item 
-		\end{itemize}
-	\item Modu³ konfiguracji -  oczekuje na sygna³ start, nastêpnie rozpoczyna przesy³anie warto¶ci konfiguruj±cych wy¶wietlacz.
-		\begin{itemize}
-			\item wej¶cie zegarowe
-			\item 
-		\end{itemize}
-	\item Multiplekser \texttt{4b\_2\_1} Modu³ ten by³ konieczny aby prze³±czyæ magistralê przesy³aj±c± dane do LCD. Pocz±tkowo modu³ wysy³aj±cy pó³bajty pobiera³ dane z modu³u inicjlizacji, 
-	\item Modu³ wysy³aj±cy pó³bajty
-	\item Modu³ wysy³aj±cy bajty
-\end{itemize}
+	\subsection{Hierarchia ¼róde³}
+			
+			\begin{figure}[ht]
+				\centering
+				\includegraphics[width=0.9\linewidth]{hierarchyImpl.png}
+				\caption{Hierarchia ¼róde³ projektu go}
+			\end{figure}
+	\subsection{Opis modu³ów}
+ Projekt zosta³ rozdzielony na poszczególne modu³y. Wprowadzenie modularyzacji umo¿liwi³o wyszczególnienie poszczególnych fragmentów, które s³u¿± do konkretnych celów. Poni¿ej opisano poszczególne modu³y u¿yte w projekcie.
+	
 
-Po stworzeniu ka¿dego modu³u, by³y przeprowadzane testy behawioralne, które mia³y na celu sprawdziæ poprawno¶æ dzia³ania. W przeciwnym wypadku szukanie potencjalnych b³êdów by³oby bardzo utrudnione. Modu³ stworzony w ramach projektu jest odpowiedzialny za prawid³ow± inicjalizacjê  i konfiguracjê wy¶wietlacza. Jest to bezpo¶rednio zwi±zane z odpowiednim wysy³aniem danych oraz synchronizacj± wszystkich procesów. Zastosowane rozwi±zania zwi±zane s± z powiadomieniem zwrotnym \textit{callback}. Oznacza to, ¿e przygotowany modu³, rozwi±zuj±cy pojedyncze kwestie implementacji, informowa³ modu³ z niego korzystaj±cy ( kliencki) o zakoñczeniu pracy. Zastosowanie tego rozwi±zania pozwala na unikniêcie problemów z odpowiedni± czêstotliwo¶ci± wysy³ania danych.
+
+	\subsubsection{Modu³ inicjalizacji}
+	Inicjalizacja uk³adu sk³ada z serii oczekiwañ i wysy³añ odpowiednich warto¶ci na magistralê SF\_D<11:8>. Ogólny schemat inicjalizacji zosta³ przedstawiony poni¿ej. Istotna jest linia LCD\_E poniewa¿ dopiero w przypadku kiedy jej stan jest wysoki, uk³ad LCD przyjmuje dane z magistrali SF\_D. Zastosowanie procedury inicjalizacji jest konieczne do ustabilizowania po³±czenia interfejsu czterobitowego. Modu³ posiada nastêpuj±ce wej¶cia i wyj¶cia:
+	\begin{itemize}
+		\item Czekaj 15ms lub wiêcej
+		\item Ustaw na SF\_D<11:8> warto¶æ 0x3, ustaw stan LCD\_E na wysoki na 12 cykli
+		\item Czekaj 4.1ms lub wiêcej
+		\item Ustaw na SF\_D<11:8> warto¶æ 0x3, ustaw stan LCD\_E na wysoki na 12 cykli
+		\item Czekaj 0.1ms lub wiêcej
+		\item Ustaw na SF\_D<11:8> warto¶æ 0x3, ustaw stan LCD\_E na wysoki na 12 cykli
+		\item Czekaj 0.04ms lub wiêcej
+		\item Ustaw na SF\_D<11:8> warto¶æ 0x2, ustaw stan LCD\_E na wysoki na 12 cykli
+		\item Czekaj 0.04ms lub wiêcej
+	\end{itemize}
+	
+	W projekcie zosta³ pod³±czony zegar 50MHz, dziêki czemu ustalone zosta³y minimalne ilo¶ci cykli jakie nale¿y odczekaæ miêdzy kolejnymi wysy³aniami. Modu³ inicjalizacyjny jest to maszyna stanów, która odmierza potrzebne warto¶ci czasowe przy wykorzystaniu licznika. 
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=0.9\linewidth]{stany-init.png}
+		\caption{Stany modu³u inicjalizacyjnego}
+	\end{figure}
+	
+	\subsubsection{Modu³ konfiguracji}
+		 
+	Po pomy¶lnej inicjalizacji modu³u LCD, sterowanie zostaje przydzielone modu³owi konfiguracji przy pomocy multiplexera \texttt{4b\_2\_1}. Wyj¶cie multipleksera zale¿y od stanu linii \texttt{set}. 
+	
+	\begin{verbatimtab}
+		if(set = '1') then
+		line_out <= line_0; -- modu³ inicjalizacyjny 
+		else
+		line_out <= line_1; -- modu³ konfiguracyjny
+		end if;
+	\end{verbatimtab}
+	
+	
+	Linie \texttt{LCD\_RS} oraz \texttt{LCD\_RW}, które wchodz± w sklad modu³u s± stale ustawione na stan niski. Linia \texttt{SF\_CE} jest odpowiedzialna za komunikacjê z pamiêci± Intel StrataFlash. Ustawienie tej linii na \texttt{1} powoduje dezaktywacjê tej pamiêci. W takim przypadku uk³ad FPGA posiada pe³n± kontrolê na zapisem i odczytem do LCD. 
+	
+	\begin{verbatimtab}
+		LCD_RW <= '0';
+		LCD_RS <= '0';
+		SF_CE <= '1';
+	\end{verbatimtab}
+	W³a¶ciwa czê¶æ konfiguracyjna sk³ada siê z wys³ania czterech bajtów na magistralê SF\_C<11:8>. 
+	\begin{itemize}
+		\item Function Set - 0x28
+		\item Entry Set - 0x06 w celu inkrementacji pozycji wska¼nika po ka¿dym wpisaniu znaku
+		\item Display On/Off - 0x0E - w³±cznie migaj±cego wska¼nika
+		\item Clear Display - 1.64ms 
+	\end{itemize}
+	Istotn± informacj± jest, ¿e wykonanie ka¿dej z tych instrukcji zajmuje pewien okres czasu. Dlatego te¿ po wyslaniu ka¿dej komendy wystêpuje stan który odmierza czas miêdzy kolejnymi wys³aniami bajtów. Czasy poszczególnych operacji znajduj± siê w dokumentacji uk³adu Spartan-3E [1].
+	
+	
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.9\linewidth]{stany-config.png}
+		\caption{Stany modu³u konfiguracyjengo}
+	\end{figure}
+	
+	\subsubsection{Wysy³anie bajtów i pó³-bajtów}
+	
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.9\linewidth]{after0F-2.PNG}
+		\caption{Przyk³ad wys³ania ca³ego bajtu w programie ModelSim}
+	\end{figure}
+	
+	Po stworzeniu ka¿dego modu³u, by³y przeprowadzane testy behawioralne, które mia³y na celu sprawdziæ poprawno¶æ dzia³ania. W przeciwnym wypadku szukanie potencjalnych b³êdów by³oby bardzo utrudnione. Modu³ stworzony w ramach projektu jest odpowiedzialny za prawid³ow± inicjalizacjê  i konfiguracjê wy¶wietlacza. Jest to bezpo¶rednio zwi±zane z odpowiednim wysy³aniem danych oraz synchronizacj± wszystkich procesów. Zastosowane rozwi±zania zwi±zane s± z powiadomieniem zwrotnym \textit{callback}. Oznacza to, ¿e przygotowany modu³, rozwi±zuj±cy pojedyncze kwestie implementacji, informowa³ modu³ z niego korzystaj±cy ( kliencki) o zakoñczeniu pracy. Zastosowanie tego rozwi±zania pozwala na unikniêcie problemów z odpowiedni± czêstotliwo¶ci± wysy³ania danych.
+	\subsection{ GRAF FSM??? co to jest?}
+	\subsection{Wyniki symulacji}
+	
+	
 \section{Implementacja}
 Projekt zosta³ zaimplementowany w ¶rodowisku Xlinx w wersji ???. Poprawno¶æ dzia³ania poszczególnych modu³ów, oraz w fazie koñcowej ca³o¶ci projektu by³a testowana w ¶rodowisku ModelSim. 
 Do poprawnej pracy uk³adu niezbêdna jest konfiguracja pliku LCD.ucf oraz GenIO.ucf, których listingi zosta³y przedstawione ponizej. 
@@ -109,72 +174,13 @@ Do poprawnej pracy uk³adu niezbêdna jest konfiguracja pliku LCD.ucf oraz GenIO.u
 	NET "Clk" PERIOD = 20.0ns HIGH 50%;
 \end{verbatimtab}
 
-\subsection{Inicjalizacja}
-Inicjalizacja uk³adu sk³ada z serii oczekiwañ i wysy³añ odpowiednich warto¶ci na magistralê SF\_D<11:8>. Ogólny schemat inicjalizacji zosta³ przedstawiony poni¿ej. Istona jest linia LCD\_E poniewa¿ dopiero w przypadku kiedy jej stan jest wysoki, uk³ad LCD przyjmuje dane z magistrali SF\_D.
-\begin{itemize}
-	\item Czekaj 15ms lub wiêcej
-	\item Ustaw na SF\_D<11:8> warto¶æ 0x3, ustaw stan LCD\_E na wysoki na 12 cykli
-	\item Czekaj 4.1ms lub wiêcej
-	\item Ustaw na SF\_D<11:8> warto¶æ 0x3, ustaw stan LCD\_E na wysoki na 12 cykli
-	\item Czekaj 0.1ms lub wiêcej
-	\item Ustaw na SF\_D<11:8> warto¶æ 0x3, ustaw stan LCD\_E na wysoki na 12 cykli
-	\item Czekaj 0.04ms lub wiêcej
-	\item Ustaw na SF\_D<11:8> warto¶æ 0x2, ustaw stan LCD\_E na wysoki na 12 cykli
-	\item Czekaj 0.04ms lub wiêcej
-\end{itemize}
 
-W projekcie zosta³ pod³±czony zegar 50MHz, dziêki czemu ustalone zosta³y minimalne ilo¶ci cykli jakie nale¿y odczekaæ miêdzy kolejnymi wysy³aniami. Modu³ inicjalizacyjny jest to maszyna stanów, która odmierza potrzebne warto¶ci czasowe przy wykorzystaniu licznika. 
+\subsection{Rozmiar uk³adu}
+	Tutaj wsadze te html co sie generuja przy generate bypass..
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.9\linewidth]{stany-init.png}
-	\caption{Stany modu³u inicjalizacyjnego}
-\end{figure}
-
-\subsection{Konfiguracja}
-Po pomy¶lnej inicjalizacji modu³u LCD, sterowanie zostaje przydzielone modu³owy konfiguracji przy pomocy multiplexera \texttt{4b\_2\_1}. Wyj¶cie multipleksera zale¿y od stanu linii \texttt{set}. 
-
-\begin{verbatimtab}
-if(set = '1') then
-	line_out <= line_0; -- modu³ inicjalizacyjny 
-else
-	line_out <= line_1; -- modu³ konfiguracyjny
-end if;
-\end{verbatimtab}
-
-Linie \texttt{LCD\_RS} oraz \texttt{LCD\_RW}, które wchodz± w sklad modu³u s± stale ustawione na stan niski. Linia \texttt{SF\_CE} jest odpowiedzialna za komunikacjê z pamiêci± Intel StrataFlash. Ustawienie tej linii na \texttt{1} powoduje dezaktywacjê tej pamiêci. W takim przypadku uk³ad FPGA posiada pe³n± kontrolê na zapisem i odczytem do LCD. 
-
-\begin{verbatimtab}
-	LCD_RW <= '0';
-	LCD_RS <= '0';
-	SF_CE <= '1';
-\end{verbatimtab}
-W³a¶ciwa czê¶æ konfiguracyjna sk³ada siê z wys³ania czterech bajtów na magistralê SF\_C<11:8>. 
-\begin{itemize}
-\item Function Set - 0x28
-\item Entry Set - 0x06 w celu inkrementacji pozycji wska¼nika po ka¿dym wpisaniu znaku
-\item Display On/Off - 0x0E - w³±cznie migaj±cego wska¼nika
-\item Clear Display - 1.64ms 
-\end{itemize}
-Istotn± informacj± jest, ¿e wykonanie ka¿dej z tych instrukcji zajmuje pewien okres czasu. Dlatego te¿ po wyslaniu ka¿dej komendy wystêpuje stan który odmierza czas miêdzy kolejnymi wys³aniami bajtów. Czasy poszczególnych operacji znajduj± siê w dokumentacji uk³adu Spartan-3E [1].
-
-
-
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.9\linewidth]{stany-config.png}
-	\caption{Stany modu³u konfiguracyjengo}
-\end{figure}
-
-\subsection{Wysy³anie bajtów i pó³-bajtów}
-
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.9\linewidth]{after0F-2.PNG}
-	\caption{Przyk³ad wys³ania ca³ego bajtu w programie ModelSim}
-\end{figure}
+\subsection{Instrukcja obs³ugi urz±dzenia}
+	Z racji charakteru projektu nie wymaga on dzia³ania zewnêtrznego. Procedura inicjalizacyjna i konfiguracyjna rozpocznie siê automatycznie po pod³±czeniu zasilania. 
+	
 	\section{Podsumowanie}
 	Projekt zawiera poprawn± inicjalizacjê oraz podstawow± konfiguracê ca³ego uk³adu LCD, co pozwala na dalsz± modyfikacjê w postaci obs³ugi wejscia danych od u¿ytkownika.
 	Nie zosta³ zrealizowany modu³, który pozwal³by na wy¶wietlanie znaków wprowadzonych przez u¿ytkownika. Taka funkcjonalno¶æ mog³aby zostaæ zrealizowana poprzez rozszerzenie modu³u konfiguracyjnego w postaci dodania dodatkowych stanów. Lepsz± opcj± by³by jednak stworzenie osobnego modu³u który odbiera³by bajt ze znakiem od u¿ytkownika i przesy³a³ go dalej do uk³adu LCD w odpowiednich odstêpach czasowych. 
