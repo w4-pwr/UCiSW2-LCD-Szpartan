@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.26)  28 MAY 2016 11:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.26)  29 MAY 2016 00:06
 entering extended mode
 **./sprawozdanie.tex
 (sprawozdanie.tex
@@ -144,6 +144,41 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\indentfirst.sty"
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count101
+\float@exts=\toks18
+\float@box=\box28
+\@float@everytoks=\toks19
+\@floatcapt=\box29
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\rotating\rotating.sty"
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count102
+\rotFPtop=\skip43
+\rotFPbot=\skip44
+\rot@float@box=\box30
+\rot@mess@toks=\toks20
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
+Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
@@ -156,13 +191,13 @@ Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks18
-\verbatim@line=\toks19
+\every@verbatim=\toks21
+\verbatim@line=\toks22
 \verbatim@in@stream=\read1
 )
-\tab@position=\count101
-\tab@size=\count102
-\listing@line=\count103
+\tab@position=\count103
+\tab@size=\count104
+\listing@line=\count105
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\mathptmx.sty"
 Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
@@ -206,20 +241,13 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-\Gm@cnth=\count104
-\Gm@cntv=\count105
-\c@Gm@tempcnt=\count106
+\Gm@cnth=\count106
+\Gm@cntv=\count107
+\c@Gm@tempcnt=\count108
 \Gm@bindingoffset=\dimen127
 \Gm@wd@mp=\dimen128
 \Gm@odd@mp=\dimen129
@@ -228,7 +256,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutheight=\dimen132
 \Gm@layouthoffset=\dimen133
 \Gm@layoutvoffset=\dimen134
-\Gm@dimlist=\toks20
+\Gm@dimlist=\toks23
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
 
@@ -239,39 +267,74 @@ Package geometry Warning: Over-specification in `h'-direction.
 Package geometry Warning: Over-specification in `v'-direction.
     `height' (731.23582pt) is ignored.
 
-(sprawozdanie.aux)
+(sprawozdanie.aux
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+)
 \openout1 = `sprawozdanie.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 33.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count107
-\scratchdimen=\dimen135
-\scratchbox=\box28
-\nofMPsegments=\count108
-\nofMParguments=\count109
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count110
-\MPscratchDim=\dimen136
-\MPnumerator=\count111
-\makeMPintoPDFobject=\count112
-\everyMPtoPDFconversion=\toks22
 )
-\c@lstlisting=\count113
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count109
+\scratchdimen=\dimen135
+\scratchbox=\box31
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen136
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
+\everyMPtoPDFconversion=\toks25
+)
+\c@lstlisting=\count115
 \big@size=\dimen137
 
 *geometry* driver: auto-detecting
@@ -342,133 +405,259 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 41.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 50
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 45.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 54
 .
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd"
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 50
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 54
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omlztmcm.fd"
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 50
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 54
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsztmcm.fd"
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 50
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 54
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omxztmcm.fd"
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 50.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 54.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 54.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 54.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 54.
  [1
 
 
 {C:/Users/rkpie/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 65.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 69.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 66.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 70.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 70.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 74.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-<hierarchyImpl.png, id=8, 298.86656pt x 152.06813pt>
+) [1]
+<schemat.png, id=12, 794.97pt x 516.42938pt>
+File: schemat.png Graphic file (type png)
+ <use schemat.png>
+Package pdftex.def Info: schemat.png used on input line 83.
+(pdftex.def)             Requested size: 658.10779pt x 427.53307pt.
+ [2
+
+ <./schemat.png>] <hierarchyImpl.png, id=18, 298.86656pt x 152.06813pt>
 File: hierarchyImpl.png Graphic file (type png)
- <use hierarchyImpl.png>
-Package pdftex.def Info: hierarchyImpl.png used on input line 77.
+
+<use hierarchyImpl.png>
+Package pdftex.def Info: hierarchyImpl.png used on input line 96.
 (pdftex.def)             Requested size: 435.32422pt x 221.51408pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 85.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 88.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 104.
+ <lcd_init.png, id=19, 214.55156pt x 207.02344pt>
+File: lcd_init.png Graphic file (type png)
+
+<use lcd_init.png>
+Package pdftex.def Info: lcd_init.png used on input line 109.
+(pdftex.def)             Requested size: 435.32422pt x 420.08568pt.
+ [3
+
+ <./hierarchyImpl.png>]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 114.
+
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 88.
- [1 <./hierarchyImpl.png>] <stany-init.png, id=16, 686.565pt x 511.9125pt>
-File: stany-init.png Graphic file (type png)
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 114.
 
-<use stany-init.png>
-Package pdftex.def Info: stany-init.png used on input line 103.
+<stany-init.png, id=24, 686.565pt x 511.9125pt>
+File: stany-init.png Graphic file (type png)
+ <use stany-init.png>
+Package pdftex.def Info: stany-init.png used on input line 129.
 (pdftex.def)             Requested size: 435.32422pt x 324.57654pt.
- [2 <./stany-init.png>]
-<stany-config.png, id=21, 749.80125pt x 560.8453pt>
+ [4 <./lcd_init.png>] <send_4bits.PNG, id=30, 644.4075pt x 504.38437pt>
+File: send_4bits.PNG Graphic file (type png)
+
+<use send_4bits.PNG>
+Package pdftex.def Info: send_4bits.PNG used on input line 139.
+(pdftex.def)             Requested size: 435.32422pt x 340.7449pt.
+ [5 <./stany-init.png>]
+Overfull \hbox (14.23978pt too wide) in paragraph at lines 154--154
+[]            \T1/cmtt/m/n/10.95 type states_of_4bits_transmission is ( idle, w
+aitForTick, transmit, finish);[] 
+ []
+
+[6 <./send_4bits.PNG>]
+<send_4bits_module.PNG, id=40, 213.04594pt x 154.32657pt>
+File: send_4bits_module.PNG Graphic file (type png)
+
+<use send_4bits_module.PNG>
+Package pdftex.def Info: send_4bits_module.PNG used on input line 218.
+(pdftex.def)             Requested size: 435.32422pt x 315.36125pt.
+ [7]
+<send_byte_stany.PNG, id=44, 686.565pt x 517.935pt>
+File: send_byte_stany.PNG Graphic file (type png)
+ <use send_byte_stany.PNG>
+Package pdftex.def Info: send_byte_stany.PNG used on input line 226.
+(pdftex.def)             Requested size: 435.32422pt x 328.39507pt.
+
+[8 <./send_4bits_module.PNG>] <send_byte.PNG, id=49, 307.1475pt x 201.00093pt>
+File: send_byte.PNG Graphic file (type png)
+
+<use send_byte.PNG>
+Package pdftex.def Info: send_byte.PNG used on input line 232.
+(pdftex.def)             Requested size: 435.32422pt x 284.89883pt.
+ [9 <./send_byte_stany.PNG> <./send_byte.PNG>]
+<multiplekser.PNG, id=55, 221.32687pt x 158.09062pt>
+File: multiplekser.PNG Graphic file (type png)
+ <use multiplekser.PNG>
+Package pdftex.def Info: multiplekser.PNG used on input line 253.
+(pdftex.def)             Requested size: 435.32422pt x 310.96512pt.
+
+<lcd_config.PNG, id=56, 188.95593pt x 222.8325pt>
+File: lcd_config.PNG Graphic file (type png)
+ <use lcd_config.PNG>
+Package pdftex.def Info: lcd_config.PNG used on input line 261.
+(pdftex.def)             Requested size: 435.32422pt x 513.41861pt.
+ [10 <./multiplekser.PNG>] [11 <./lcd_config.PNG>]
+<stany-config.png, id=65, 749.80125pt x 560.8453pt>
 File: stany-config.png Graphic file (type png)
  <use stany-config.png>
-Package pdftex.def Info: stany-config.png used on input line 140.
+Package pdftex.def Info: stany-config.png used on input line 286.
 (pdftex.def)             Requested size: 435.32422pt x 325.62425pt.
 
-<after0F-2.PNG, id=22, 1083.29718pt x 548.80031pt>
-File: after0F-2.PNG Graphic file (type png)
- <use after0F-2.PNG>
-Package pdftex.def Info: after0F-2.PNG used on input line 149.
-(pdftex.def)             Requested size: 435.32422pt x 220.53786pt.
+[12 <./stany-config.png>] <q1.png, id=71, 1064.47687pt x 505.89pt>
+File: q1.png Graphic file (type png)
 
+<use q1.png>
+Package pdftex.def Info: q1.png used on input line 300.
+(pdftex.def)             Requested size: 658.10779pt x 312.76855pt.
+ <q2-q3.png, id=72, 1084.05pt x 550.30594pt>
+File: q2-q3.png Graphic file (type png)
+ <use q2-q3.png>
+Package pdftex.def Info: q2-q3.png used on input line 307.
+(pdftex.def)             Requested size: 658.10779pt x 334.0907pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+<q4-q5.png, id=73, 1084.05pt x 548.80031pt>
+File: q4-q5.png Graphic file (type png)
+ <use q4-q5.png>
+Package pdftex.def Info: q4-q5.png used on input line 313.
+(pdftex.def)             Requested size: 658.10779pt x 333.17662pt.
+ [13
 
-[3 <./stany-config.png>]
-Overfull \hbox (2.92303pt too wide) in paragraph at lines 165--165
+ <./q1.png>]
+<q6-q7.png, id=78, 1065.9825pt x 549.55313pt>
+File: q6-q7.png Graphic file (type png)
+ <use q6-q7.png>
+Package pdftex.def Info: q6-q7.png used on input line 319.
+(pdftex.def)             Requested size: 658.10779pt x 339.28549pt.
+ [14 <./q2-q3.png>] <q8-q9.png, id=83, 1083.29718pt x 546.54187pt>
+File: q8-q9.png Graphic file (type png)
+ <use q8-q9.png>
+Package pdftex.def Info: q8-q9.png used on input line 325.
+(pdftex.def)             Requested size: 658.10779pt x 332.03905pt.
+ [15 <./q4-q5.png>] <config_entrymode.png, id=88, 1083.29718pt x 551.05875pt>
+File: config_entrymode.png Graphic file (type png)
+
+<use config_entrymode.png>
+Package pdftex.def Info: config_entrymode.png used on input line 331.
+(pdftex.def)             Requested size: 658.10779pt x 334.78316pt.
+ [16 <./q6-q7.png>]
+<0x28-chart.png, id=93, 1079.53313pt x 548.0475pt>
+File: 0x28-chart.png Graphic file (type png)
+ <use 0x28-chart.png>
+Package pdftex.def Info: 0x28-chart.png used on input line 337.
+(pdftex.def)             Requested size: 658.10779pt x 334.10779pt.
+
+[17 <./q8-q9.png>] <0x06-chart.png, id=98, 1084.80281pt x 539.01375pt>
+File: 0x06-chart.png Graphic file (type png)
+
+<use 0x06-chart.png>
+Package pdftex.def Info: 0x06-chart.png used on input line 343.
+(pdftex.def)             Requested size: 658.10779pt x 327.01314pt.
+ [18 <./config_entrymode.png>]
+<0x0F.png, id=104, 1084.80281pt x 546.54187pt>
+File: 0x0F.png Graphic file (type png)
+ <use 0x0F.png>
+Package pdftex.def Info: 0x0F.png used on input line 349.
+(pdftex.def)             Requested size: 658.10779pt x 331.58037pt.
+ [19 <./0x28-chart.png>] [20 <./0x06-chart.png>] [21 <./0x0F.png>]
+Overfull \hbox (2.92303pt too wide) in paragraph at lines 361--361
 []        \T1/cmtt/m/n/10.95 NET "LCD_D<0>" LOC = "R15" | IOSTANDARD = LVCMOS33
  | DRIVE = 4 | SLEW = SLOW ;[] 
  []
 
 
-Overfull \hbox (2.92303pt too wide) in paragraph at lines 166--166
+Overfull \hbox (2.92303pt too wide) in paragraph at lines 362--362
 []        \T1/cmtt/m/n/10.95 NET "LCD_D<1>" LOC = "R16" | IOSTANDARD = LVCMOS33
  | DRIVE = 4 | SLEW = SLOW ;[] 
  []
 
 
-Overfull \hbox (2.92303pt too wide) in paragraph at lines 167--167
+Overfull \hbox (2.92303pt too wide) in paragraph at lines 363--363
 []        \T1/cmtt/m/n/10.95 NET "LCD_D<2>" LOC = "P17" | IOSTANDARD = LVCMOS33
  | DRIVE = 4 | SLEW = SLOW ;[] 
  []
 
 
-Overfull \hbox (2.92303pt too wide) in paragraph at lines 168--168
+Overfull \hbox (2.92303pt too wide) in paragraph at lines 364--364
 []        \T1/cmtt/m/n/10.95 NET "LCD_D<3>" LOC = "M15" | IOSTANDARD = LVCMOS33
  | DRIVE = 4 | SLEW = SLOW ;[] 
  []
 
-[4 <./after0F-2.PNG>] [5] (sprawozdanie.aux) ) 
+<project_status.png, id=117, 646.66594pt x 479.54156pt>
+File: project_status.png Graphic file (type png)
+
+<use project_status.png>
+Package pdftex.def Info: project_status.png used on input line 378.
+(pdftex.def)             Requested size: 435.32422pt x 322.82047pt.
+
+<project_status2.png, id=118, 671.50874pt x 276.28218pt>
+File: project_status2.png Graphic file (type png)
+
+<use project_status2.png>
+Package pdftex.def Info: project_status2.png used on input line 385.
+(pdftex.def)             Requested size: 435.32422pt x 179.10912pt.
+ [22
+
+ <./project_status.png>] [23 <./project_status2.png>] (sprawozdanie.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4131 strings out of 493634
- 57224 string characters out of 3141314
- 126565 words of memory out of 3000000
- 7427 multiletter control sequences out of 15000+200000
+ 4416 strings out of 493634
+ 61587 string characters out of 3141314
+ 135416 words of memory out of 3000000
+ 7676 multiletter control sequences out of 15000+200000
  60992 words of font info for 63 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 27i,5n,32p,797b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\rkpie\AppData\Local\Mi
-KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk>{C:/Program Files (x86)
-/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/u
-rw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/ut
-mri8a.pfb>
-Output written on sprawozdanie.pdf (6 pages, 165828 bytes).
+ 27i,7n,32p,797b,299s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\rkpie\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+ectt1095.pk>{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on sprawozdanie.pdf (24 pages, 637388 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
+ 217 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
