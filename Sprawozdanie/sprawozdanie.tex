@@ -42,7 +42,7 @@
 		\textsc{\large Uk³ady cyfrowe i systemy wbudowane 2}\\[0.5cm] 
 		
 		\HRule \\[0.4cm]
-		{ \huge \bfseries LCD}\\[0.4cm]
+		{ \huge \bfseries Obs³uga komunikacji ze sterownikiem LCD na zestawie uruchomieniowym Spartan-3E }\\[0.4cm]
 		\HRule \\[1.5cm]
 		
 		\begin{minipage}{0.4\textwidth}
@@ -68,11 +68,11 @@
 	
 \section{Temat}
 	\subsection{Cel i zakres pracy}
-	\subsection{Zagadnienia teoretyczne}
-	//na koncu
-	\subsection{Opis sprzêtu}
-P³ytka startowa \texttt{Spartan-3E} posiada uk³ad LCD o rozmiarze 2x16 znaków. Uk³ad korzysta ze sterownika \texttt{ST7066U}, który jest kompatybilny z popularnym sterownikiem Hitachi HD44780. 
+		Celem projektu by³o zaimplementowanie modu³u obs³ugi LCD pod³±czonego do uk³adu Spartan-3E. W ramach projektu wykonano procedurê inicjalizacyjn± i konfiguracyjn± urz±dzenia. 
 
+		
+	\subsection{Opis sprzêtu}
+	Wy¶wietlacz pod³±czony do zestawu Spartan-3E posiada 2 linie 16 znakowe. W celu zminimalizowania ilo¶ci pinów wyj¶ciowych, oraz zachowania kompatybilno¶ci sterownik do komunikacji korzysta z 4-bitowego interfejsu. Wy¶wietlacz LCD posiada zewnêtrzny sterownik Sitronix \texttt{ST7066U}. Jest on zgodny funkcjonalnie z rodzin± najbardziej popularnych wy¶wietlaczy z rodziny HD44780. 
 \section{Opis projektu}
 	W projekcie zaimplementowano modu³ do inicjalizacji i konfiguracji wy¶wietlacza LCD. Na poni¿szym schemacie przedstawiony zosta³ ogólny scheamat ideowy projektu.
 	\newpage
@@ -290,7 +290,7 @@ P³ytka startowa \texttt{Spartan-3E} posiada uk³ad LCD o rozmiarze 2x16 znaków. U
 
 	
 	Po stworzeniu ka¿dego modu³u, by³y przeprowadzane testy behawioralne, które mia³y na celu sprawdziæ poprawno¶æ dzia³ania. W przeciwnym wypadku szukanie potencjalnych b³êdów by³oby bardzo utrudnione. Modu³ stworzony w ramach projektu jest odpowiedzialny za prawid³ow± inicjalizacjê  i konfiguracjê wy¶wietlacza. Jest to bezpo¶rednio zwi±zane z odpowiednim wysy³aniem danych oraz synchronizacj± wszystkich procesów. Zastosowane rozwi±zania zwi±zane s± z powiadomieniem zwrotnym \textit{callback}. Oznacza to, ¿e przygotowany modu³, rozwi±zuj±cy pojedyncze kwestie implementacji, informowa³ modu³ z niego korzystaj±cy ( kliencki) o zakoñczeniu pracy. Zastosowanie tego rozwi±zania pozwala na unikniêcie problemów z odpowiedni± czêstotliwo¶ci± wysy³ania danych.
-	\subsection{ GRAF FSM??? co to jest?}
+
 	\subsection{Wyniki symulacji}
 		Z racji synchronicznego i sta³ego charakteru projektu zdecydowano siê na testowanie ca³o¶ci modu³u w programie ModelSim. Poni¿ej przedstawiono kluczowe elementy w symulacji.
 		
@@ -372,7 +372,7 @@ Do poprawnej pracy uk³adu niezbêdna jest konfiguracja pliku LCD.ucf oraz GenIO.u
 
 
 \subsection{Rozmiar uk³adu}
-	Poni¿ej przedstawiono raporty wygenerowane przez ¶rodowisko XLinx podczas generowania implementacji. Widaæ z niej, ¿e projekt wymaga jedynie 168 LUT spo¶ród 9312 dostêpnych.
+	Poni¿ej przedstawiono raporty wygenerowane przez ¶rodowisko XLinx podczas generowania implementacji. Widaæ z niej, ¿e projekt wymaga jedynie 168 LUT spo¶ród 9312 dostêpnych. Ponadto do implementacji zu¿yto zaledwie 1\% dostêpnych przerzutników.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.9\linewidth]{project_status.png}
@@ -391,8 +391,8 @@ Do poprawnej pracy uk³adu niezbêdna jest konfiguracja pliku LCD.ucf oraz GenIO.u
 	Z racji charakteru projektu nie wymaga on dzia³ania zewnêtrznego. Procedura inicjalizacyjna i konfiguracyjna rozpocznie siê automatycznie po pod³±czeniu zasilania. 
 	
 	\section{Podsumowanie}
-	Projekt zawiera poprawn± inicjalizacjê oraz podstawow± konfiguracê ca³ego uk³adu LCD, co pozwala na dalsz± modyfikacjê w postaci obs³ugi wejscia danych od u¿ytkownika.
-	Nie zosta³ zrealizowany modu³, który pozwal³by na wy¶wietlanie znaków wprowadzonych przez u¿ytkownika. Taka funkcjonalno¶æ mog³aby zostaæ zrealizowana poprzez rozszerzenie modu³u konfiguracyjnego w postaci dodania dodatkowych stanów. Lepsz± opcj± by³by jednak stworzenie osobnego modu³u który odbiera³by bajt ze znakiem od u¿ytkownika i przesy³a³ go dalej do uk³adu LCD w odpowiednich odstêpach czasowych. 
+	Projekt zawiera poprawn± inicjalizacjê oraz podstawow± konfiguracjê ca³ego uk³adu LCD, co pozwala na dalsz± modyfikacjê w postaci obs³ugi wej¶cia danych od u¿ytkownika.
+	Nie zosta³ zrealizowany modu³, który pozwala³by na wy¶wietlanie znaków wprowadzonych przez u¿ytkownika. Taka funkcjonalno¶æ mog³aby zostaæ zrealizowana poprzez rozszerzenie modu³u konfiguracyjnego w postaci dodania dodatkowych stanów. Lepsz± opcj± by³by jednak stworzenie osobnego modu³u który odbiera³by bajt ze znakiem od u¿ytkownika i przesy³a³ go dalej do uk³adu LCD w odpowiednich odstêpach czasowych. 
 	\begin{thebibliography}{999}
 		\bibitem{szpartan} 
 		{\em http://www.xilinx.com/support/documentation/boards\_and\_kits/ug230.pdf}, \\
