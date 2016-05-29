@@ -106,7 +106,7 @@
 	
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.9\linewidth]{lcd_init.png}
+			\includegraphics[width=0.5\linewidth]{lcd_init.png}
 			\caption{Symbol modu³u inicjalizacji}
 		\end{figure}
 	Inicjalizacja uk³adu sk³ada z serii oczekiwañ i wysy³añ odpowiednich warto¶ci na magistralê SF\_D<11:8>. Ogólny schemat inicjalizacji zosta³ przedstawiony poni¿ej. Istotna jest linia LCD\_E poniewa¿ dopiero w przypadku kiedy jej stan jest wysoki, uk³ad LCD przyjmuje dane z magistrali SF\_D. Zastosowanie procedury inicjalizacji jest konieczne do ustabilizowania po³±czenia interfejsu czterobitowego.
@@ -215,8 +215,8 @@
 		
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.9\linewidth]{send_4bits_module.PNG}
-			\caption{Symbol modu³y wysy³aj±cego cztery bity }
+			\includegraphics[width=0.5\linewidth]{send_4bits_module.PNG}
+			\caption{Symbol modu³u wysy³aj±cego cztery bity }
 		\end{figure}
 		
 		Wysy³anie tylko danych czterobitowych jest jednak niewystarczaj±ce. Poprawna konfiguracja, czy wysy³anie danych programowych wymaga przesy³ania pe³nych bajtów. Problem ten jest opisany w dokumentacji sterownika LCD. Wys³anie bajtu polega na wys³aniu najpierw jego górnej po³ówki, odczekaniu jednej mikrosekundy, nastêpnie przes³aniu dolnej po³ówki bajtu. W tym celu zaimplementowano kolejn± maszynê stanów. Korzysta ona z poprzednio opisanego modu³u wysy³ania czterobitowych danych.
@@ -229,8 +229,8 @@
 		
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.9\linewidth]{send_byte.PNG}
-			\caption{Symbol modu³y wysy³aj±cego ca³e bajty }
+			\includegraphics[width=0.5\linewidth]{send_byte.PNG}
+			\caption{Symbol modu³u wysy³aj±cego ca³e bajty }
 		\end{figure}
 		
 		
@@ -250,7 +250,7 @@
 			
 			\begin{figure}[H]
 				\centering
-				\includegraphics[width=0.9\linewidth]{multiplekser.PNG}
+				\includegraphics[width=0.5\linewidth]{multiplekser.PNG}
 				\caption{Symbol multipleksera }
 			\end{figure}
 			
@@ -258,7 +258,7 @@
 		 
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.9\linewidth]{lcd_config.PNG}
+		\includegraphics[width=0.5\linewidth]{lcd_config.PNG}
 		\caption{Symbol modu³u konfiguracji }
 	\end{figure}
 	
